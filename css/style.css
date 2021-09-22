@@ -1,0 +1,299 @@
+* {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  outline: none; }
+
+/*Variables*/
+@font-face {
+  font-family: "ProximaNova";
+  src: url("../font/ProximaNova-Regular.woff2"); }
+
+body {
+  background-color: #F3F9F5;
+  font-family: "ProximaNova"; }
+
+main {
+  padding-top: 98px; }
+
+.container {
+  width: 85%;
+  max-width: 1111px;
+  margin: 0 auto;
+  height: 100%; }
+
+/*Navegador*/
+.header {
+  background-color: white;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  padding: 18px 0;
+  position: fixed;
+  width: 100%;
+  z-index: 2; }
+
+.header a {
+  color: #494748;
+  text-decoration: none; }
+
+.logo-nav-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.navigation ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  align-items: center; }
+  .navigation ul li {
+    display: inline-block; }
+    .navigation ul li a {
+      display: block;
+      padding: 0.5rem 1rem;
+      font-size: 20px;
+      font-weight: 800; }
+    .navigation ul li a:hover {
+      color: #0C7633;
+      border-bottom: 2px solid #0C7633; }
+
+.home {
+  height: calc(100vh - 98px);
+  position: relative; }
+  .home .cont {
+    display: flex;
+    align-items: center;
+    height: 94%; }
+    .home .cont .home-part-1 {
+      width: 50%; }
+      .home .cont .home-part-1 h1 {
+        font-size: 60px;
+        line-height: 60px;
+        color: #0C7633;
+        margin-bottom: 20px;
+        font-weight: 900; }
+      .home .cont .home-part-1 p {
+        color: #494748;
+        font-size: 22px;
+        width: 85%;
+        margin-bottom: 50px; }
+      .home .cont .home-part-1 a {
+        text-decoration: none;
+        color: #0C7633;
+        background-color: #FCCA08;
+        font-weight: 900;
+        padding: 18px 49px;
+        font-size: 20px;
+        border-radius: 20px;
+        box-shadow: 0px 4px 8px #D7AB00; }
+    .home .cont .home-part-2 {
+      width: 50%; }
+      .home .cont .home-part-2 img {
+        float: right;
+        width: 602px; }
+      .home .cont .home-part-2 .cuadro {
+        background-image: url(../img/home1.png);
+        background-repeat: no-repeat;
+        width: 602px;
+        height: 654px;
+        float: right;
+        position: relative; }
+      .home .cont .home-part-2 .btn-home {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        padding: 30px 15px; }
+        .home .cont .home-part-2 .btn-home a {
+          font-size: 20px;
+          text-decoration: none;
+          margin: 0 5px;
+          padding: 8px 15px;
+          border-radius: 20px;
+          background-color: white;
+          color: #494748; }
+        .home .cont .home-part-2 .btn-home a:hover {
+          background-color: #0C7633;
+          color: white; }
+
+.slider {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-top: 2px solid #0C7633;
+  border-bottom: 2px solid #0C7633; }
+  .slider span {
+    font-size: 35px;
+    font-weight: 800;
+    display: flex;
+    text-align: center; }
+    .slider span img {
+      padding: 0 20px; }
+
+.nosotros {
+  padding: 150px 0; }
+  .nosotros .cont {
+    display: flex; }
+    .nosotros .cont .nosotros-part-1 {
+      width: 50%; }
+      .nosotros .cont .nosotros-part-1 .cont-imgs {
+        padding-right: 50px;
+        height: 550px; }
+        .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
+          width: 324px;
+          float: right; }
+        .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
+          position: relative;
+          left: 10px;
+          top: -100px; }
+        .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
+          float: right;
+          padding-top: 20px; }
+    .nosotros .cont .nosotros-part-2 {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center; }
+      .nosotros .cont .nosotros-part-2 h2 {
+        font-size: 60px;
+        font-weight: 900;
+        color: #0C7633;
+        margin-bottom: 30px;
+        padding-left: 20px; }
+      .nosotros .cont .nosotros-part-2 p {
+        font-size: 22px;
+        color: #494748;
+        padding-left: 20px; }
+
+.equipo {
+  padding: 150px 0; }
+  .equipo .title h2 {
+    font-size: 60px;
+    color: #0C7633;
+    font-weight: 800; }
+  .equipo .btn-equipo {
+    float: right; }
+
+.administracion {
+  padding: 150px 0; }
+  .administracion .title h2 {
+    font-size: 60px;
+    color: #0C7633;
+    font-weight: 800; }
+  .administracion .btn-equipo {
+    float: right; }
+
+.Servicios {
+  padding: 150px 0; }
+  .Servicios .title h2 {
+    font-size: 60px;
+    color: #0C7633;
+    font-weight: 800; }
+  .Servicios .btn-equipo {
+    float: right; }
+  .Servicios .wrap {
+    width: 1100px;
+    margin: 50px 0 0 0;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .Servicios .tarjeta-wrap {
+    margin: 15px;
+    -webkit-perspective: 800;
+    perspective: 800; }
+  .Servicios .tarjeta {
+    width: 520px;
+    height: 280px;
+    background: white;
+    position: relative;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-transition: .7s ease;
+    transition: .7s ease;
+    box-shadow: 0px 4px 8px rgba(73, 71, 72, 0.4);
+    border-radius: 20px; }
+  .Servicios .adelante {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .Servicios .adelante p {
+      margin-top: 10px;
+      font-size: 40px;
+      color: #494748; }
+  .Servicios .adelante, .Servicios .atras {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden; }
+  .Servicios .adelante {
+    width: 100%; }
+  .Servicios .atras {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg);
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: #fff; }
+    .Servicios .atras p {
+      font-size: 25px;
+      color: #494748; }
+    .Servicios .atras .boton-tarjeta-atras {
+      display: flex;
+      justify-content: center; }
+    .Servicios .atras a {
+      font-size: 20px;
+      font-weight: 800;
+      text-decoration: none;
+      color: #0C7633;
+      background-color: #FCCA08;
+      padding: 16px 67px;
+      box-shadow: 0px 4px 8px #D7AB00;
+      border-radius: 20px; }
+  .Servicios .tarjeta-wrap:hover .tarjeta {
+    -webkit-transform: rotateY(180deg);
+    transform: rotateY(180deg); }
+
+.slider1 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: white;
+  border-top: 2px solid #0C7633;
+  border-bottom: 2px solid #0C7633; }
+  .slider1 span {
+    font-size: 35px;
+    font-weight: 800;
+    display: flex;
+    text-align: center; }
+    .slider1 span img {
+      padding: 0 10px; }
+
+.footer .bg-footer {
+  background-color: #0C7633; }
+  .footer .bg-footer .container {
+    background-color: #0C7633; }
+    .footer .bg-footer .container .contfoot {
+      display: flex;
+      justify-content: space-between; }
+      .footer .bg-footer .container .contfoot h3 {
+        font-size: 40px;
+        color: white; }
+      .footer .bg-footer .container .contfoot a {
+        text-decoration: none;
+        padding: 5px 15px;
+        color: #0C7633;
+        background-color: #FCCA08; }
