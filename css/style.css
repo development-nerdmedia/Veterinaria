@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Mukta:wght@200;300;400;500;600;700;800&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -55,7 +56,8 @@ main {
       font-size: 20px;
       font-weight: 800; }
     .navigation ul li a.icon-redsocial-inst {
-      padding-right: 0; }
+      padding-right: 0;
+      padding-left: 0; }
     .navigation ul li a:hover {
       color: #0C7633;
       border-bottom: 2px solid #0C7633; }
@@ -100,7 +102,8 @@ main {
         width: 602px;
         height: 654px;
         float: right;
-        position: relative; }
+        position: relative;
+        border-radius: 20px; }
       .home .cont .home-part-2 .btn-home {
         position: absolute;
         right: 0;
@@ -140,30 +143,20 @@ main {
       animation-delay: -40s;
       display: flex; }
       .slider .scroll .text img {
-        width: 50px !important;
+        width: 50px;
         padding-right: 20px; }
       .slider .scroll .text span {
         font-size: 35px;
         color: #494748; }
       .slider .scroll .text .cont {
         padding-left: 50px; }
+        .slider .scroll .text .cont img#email {
+          width: 60px; }
     .slider .scroll .text:nth-child(2) {
       animation: animate2 40s linear infinite;
       animation-delay: -20s; }
 
-@keyframes animate {
-  0% {
-    transform: translateX(100%); }
-  100% {
-    transform: translateX(-100%); } }
-
-@keyframes animate2 {
-  0% {
-    transform: translateX(0%); }
-  100% {
-    transform: translateX(-200%); } }
-
-.nosotros {
+@keyframes animate {}@keyframes animate2 {}.nosotros {
   padding: 150px 0; }
   .nosotros .cont {
     display: flex; }
@@ -199,25 +192,67 @@ main {
         padding-left: 20px; }
 
 .equipo {
-  padding: 150px 0; }
+  padding: 100px 0; }
   .equipo .title h2 {
     font-size: 60px;
     color: #0C7633;
     font-weight: 800; }
   .equipo .btn-equipo {
     float: right; }
+  .equipo div#slider {
+    margin-top: 100px; }
+  .equipo #slider ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap; }
+    .equipo #slider ul li {
+      width: 48.6%;
+      /*48.6*/
+      min-height: 686px;
+      list-style: none;
+      background-color: white;
+      border-radius: 20px;
+      margin-bottom: 45px; }
+      .equipo #slider ul li .tarj-img {
+        height: 384px;
+        overflow: hidden; }
+      .equipo #slider ul li .tarj-text .top {
+        padding: 10px 20px;
+        display: flex;
+        align-items: center;
+        border-bottom: 2px solid rgba(73, 71, 72, 0.2); }
+        .equipo #slider ul li .tarj-text .top div {
+          padding-left: 20px;
+          color: #494748; }
+      .equipo #slider ul li .tarj-text .bot {
+        padding: 10px 20px; }
+        .equipo #slider ul li .tarj-text .bot p {
+          font-size: 20px; }
 
 .administracion {
-  padding: 150px 0; }
+  padding: 100px 0; }
   .administracion .title h2 {
     font-size: 60px;
     color: #0C7633;
     font-weight: 800; }
   .administracion .btn-equipo {
     float: right; }
+  .administracion .cont {
+    margin-top: 100px; }
+    .administracion .cont ul {
+      width: 100%;
+      display: flex;
+      justify-content: space-around; }
+      .administracion .cont ul li {
+        width: 352px;
+        list-style: none;
+        border-radius: 20px;
+        box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4); }
+        .administracion .cont ul li .adm-text {
+          padding: 5px 20px; }
 
 .Servicios {
-  padding: 150px 0; }
+  padding: 100px 0; }
   .Servicios .title h2 {
     font-size: 60px;
     color: #0C7633;
@@ -225,7 +260,7 @@ main {
   .Servicios .btn-equipo {
     float: right; }
   .Servicios .wrap {
-    width: 1100px;
+    width: 100%;
     margin: 50px 0 0 0;
     display: -webkit-box;
     display: -webkit-flex;
@@ -239,9 +274,9 @@ main {
   .Servicios .tarjeta-wrap {
     margin: 15px;
     -webkit-perspective: 800;
-    perspective: 800; }
+    perspective: 800;
+    width: 46.8%; }
   .Servicios .tarjeta {
-    width: 520px;
     height: 280px;
     background: white;
     position: relative;
@@ -318,13 +353,15 @@ main {
       animation-delay: -40s;
       display: flex; }
       .slider1 .scroll .text img {
-        width: 50px !important;
+        width: 50px;
         padding-right: 20px; }
       .slider1 .scroll .text span {
         font-size: 35px;
         color: #494748; }
       .slider1 .scroll .text .cont {
         padding-left: 50px; }
+        .slider1 .scroll .text .cont img#email1 {
+          width: 60px; }
     .slider1 .scroll .text:nth-child(2) {
       animation: animate2 40s linear infinite;
       animation-delay: -20s; }
@@ -394,22 +431,134 @@ main {
       .footer .creditos .cont-credito .info-nerd img.logo-nerd {
         width: 72px; }
 
-.marquee {
-  margin: 0 auto;
-  white-space: nowrap;
-  overflow: hidden;
-  position: absolute; }
-
-.marquee span {
-  display: inline-block;
-  padding-left: 100%;
-  animation: marquee 5s linear infinite; }
-
-.marquee2 span {
-  animation-delay: 2.5s; }
-
-@keyframes marquee {
-  0% {
-    transform: translate(0, 0); }
-  100% {
-    transform: translate(-100%, 0); } }
+.contacto {
+  height: 100vh;
+  background-color: #0C7633;
+  padding: 100px 0; }
+  .contacto .btn-close {
+    float: right; }
+  .contacto .cont {
+    padding-top: 100px;
+    display: flex;
+    justify-content: space-between; }
+    .contacto .cont .contacto-part1 {
+      width: 50%;
+      color: white;
+      /* reset */
+      /* border, padding, margin, width */
+      /* 
+  #fs-frm [type="button"]:focus,
+  #fs-frm [type="submit"]:focus,
+  #fs-frm [type="reset"]:focus {
+    outline: none;
+  } */
+      /* address, locale */ }
+      .contacto .cont .contacto-part1 h1 {
+        font-size: 60px; }
+      .contacto .cont .contacto-part1 p {
+        font-size: 22px;
+        margin-bottom: 40px; }
+      .contacto .cont .contacto-part1 #fs-frm input,
+      .contacto .cont .contacto-part1 #fs-frm select,
+      .contacto .cont .contacto-part1 #fs-frm textarea,
+      .contacto .cont .contacto-part1 #fs-frm fieldset,
+      .contacto .cont .contacto-part1 #fs-frm optgroup,
+      .contacto .cont .contacto-part1 #fs-frm label,
+      .contacto .cont .contacto-part1 #fs-frm #card-element:disabled {
+        font-family: inherit;
+        font-size: 100%;
+        color: white;
+        border: none;
+        border-radius: 0;
+        /* display: block; */
+        width: 100%;
+        padding: 0;
+        margin: 0;
+        -webkit-appearance: none;
+        -moz-appearance: none; }
+      .contacto .cont .contacto-part1 #fs-frm label,
+      .contacto .cont .contacto-part1 #fs-frm legend,
+      .contacto .cont .contacto-part1 #fs-frm ::placeholder {
+        font-size: 20px;
+        margin-bottom: 0.5rem;
+        padding-top: 0.2rem;
+        display: flex;
+        align-items: baseline;
+        color: white; }
+      .contacto .cont .contacto-part1 #fs-frm input,
+      .contacto .cont .contacto-part1 #fs-frm select,
+      .contacto .cont .contacto-part1 #fs-frm textarea,
+      .contacto .cont .contacto-part1 #fs-frm #card-element {
+        background-color: rgba(255, 255, 255, 0.26);
+        color: white;
+        padding: 0.75em 1rem;
+        margin-bottom: 1.5rem; }
+      .contacto .cont .contacto-part1 #fs-frm textarea {
+        height: 50px; }
+      .contacto .cont .contacto-part1 #fs-frm input:focus,
+      .contacto .cont .contacto-part1 #fs-frm select:focus,
+      .contacto .cont .contacto-part1 #fs-frm textarea:focus {
+        background-color: transparent;
+        outline-style: none;
+        outline-width: thin;
+        outline-color: gray;
+        outline-offset: -1px; }
+      .contacto .cont .contacto-part1 #fs-frm [type="text"],
+      .contacto .cont .contacto-part1 #fs-frm [type="email"] {
+        width: 100%; }
+      .contacto .cont .contacto-part1 #fs-frm [type="button"],
+      .contacto .cont .contacto-part1 #fs-frm [type="submit"],
+      .contacto .cont .contacto-part1 #fs-frm [type="reset"] {
+        width: 150px;
+        cursor: pointer;
+        color: white;
+        background-color: transparent;
+        border: 2px solid #bb9d65;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button; }
+      .contacto .cont .contacto-part1 #fs-frm [type="submit"]:hover {
+        width: 150px;
+        cursor: pointer;
+        color: white;
+        background-color: #bb9d65;
+        border: 2px solid #bb9d65;
+        -webkit-appearance: button;
+        -moz-appearance: button;
+        appearance: button;
+        transition: all 0.2s linear; }
+      .contacto .cont .contacto-part1 #fs-frm [type="submit"],
+      .contacto .cont .contacto-part1 #fs-frm [type="reset"] {
+        margin-bottom: 0; }
+      .contacto .cont .contacto-part1 #fs-frm select {
+        text-transform: none; }
+      .contacto .cont .contacto-part1 #fs-frm [type="checkbox"] {
+        -webkit-appearance: checkbox;
+        -moz-appearance: checkbox;
+        appearance: checkbox;
+        display: inline-block;
+        width: auto;
+        margin: 0 0.5em 0 0 !important; }
+      .contacto .cont .contacto-part1 #fs-frm [type="radio"] {
+        -webkit-appearance: radio;
+        -moz-appearance: radio;
+        appearance: radio; }
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale input[name="city"],
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale select[name="state"],
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale input[name="postal-code"] {
+        display: inline; }
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale input[name="city"] {
+        width: 52%; }
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale select[name="state"],
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale input[name="postal-code"] {
+        width: 20%; }
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale input[name="city"],
+      .contacto .cont .contacto-part1 #fs-frm fieldset.locale select[name="state"] {
+        margin-right: 3%; }
+      .contacto .cont .contacto-part1 form {
+        width: 400px; }
+      .contacto .cont .contacto-part1 form fieldset .btn {
+        margin-left: auto;
+        margin-right: auto; }
+      .contacto .cont .contacto-part1 textarea {
+        height: 80px !important; }
