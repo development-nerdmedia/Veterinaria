@@ -14,9 +14,9 @@
             <nav class="navigation">
                 <ul>
                     <li><a href="#nosotros" class="btn-nav">Nosotros</a></li>
-                    <li><a href="#servicio" class="btn-nav">Servicio</a></li>
+                    <li><a href="#servicios" class="btn-nav">Servicio</a></li>
                     <li><a href="#equipo" class="btn-nav">Equipo</a></li>
-                    <li><a href="#" class="contacto btn-nav">Contacto</a></li>
+                    <li><a href="#" class="contact btn-nav">Contacto</a></li>
                     <li><a href="#" class="icon-redsocial"><img src="icons/logo-facebook.svg" alt="logo-facebook"></a></li>
                     <li><a href="#" class="icon-redsocial-inst"><img src="icons/logo-instagram.svg" alt="logo-instagram"></a></li>
                 </ul>
@@ -50,14 +50,14 @@
             <div class="slider">
                 <div class="scroll text1">
                     <div class="text">
-                        <div class="cont"><img src="icons/icono-map.svg" alt=""> <span>Av San Juan 981, San Juan de Miraflores</span></div>
-                        <div class="cont"><img src="icons/icono-telefono.svg" alt="telefono"><span>(+51) 276 4058 - (-51 276 4051)</span></div>
-                        <div class="cont"><img src="icons/icono-email.svg" alt="telefono"><span>contacto@veterinariasanmarcos.com</span></div>
+                        <div class="cont"><img src="icons/icono-map.svg" alt=""><span>Av San Juan 981, San Juan de Miraflores</span></div>
+                        <div class="cont"><img src="icons/icono-telefono.svg" alt="telefono"><span>(+51) 276 4058 - (+51) 276 4051)</span></div>
+                        <div class="cont"><img id="email" src="icons/icono-email.svg" alt="telefono"><span>contacto@veterinariasanmarcos.com</span></div>
                     </div>
                     <div class="text">
                         <div class="cont"><img src="icons/icono-map.svg" alt=""> <span>Av San Juan 981, San Juan de Miraflores</span></div>
-                        <div class="cont"><img src="icons/icono-telefono.svg" alt="telefono"><span>(+51) 276 4058 - (-51 276 4051)</span></div>
-                        <div class="cont"><img src="icons/icono-email.svg" alt="telefono"><span>contacto@veterinariasanmarcos.com</span></div>
+                        <div class="cont"><img src="icons/icono-telefono.svg" alt="telefono"><span>(+51) 276 4058 - (+51) 276 4051)</span></div>
+                        <div class="cont"><img id="email" src="icons/icono-email.svg" alt="telefono"><span>contacto@veterinariasanmarcos.com</span></div>
                     </div>  
                 </div>                 
             </div>
@@ -88,18 +88,86 @@
                 </div>
             </div>
         </section>
-        <section class="equipo">
+        <section id="equipo" class="equipo">
             <div class="container">
                 <div class="title">
                     <h2>Equipo Veterinario</h2>
                 </div>                
                 <div class="btn-equipo">
-                    <a href=""><img src="icons/flecha1.svg" alt=""></a>
-                    <a href=""><img src="icons/flecha2.svg" alt=""></a>
+                    <a  class="control_prev"><img src="icons/flecha1.svg" alt=""></a>
+                    <a  class="control_next"><img src="icons/flecha2.svg" alt=""></a>
                 </div>
-                <div class="cont">   
+                <div id="slider">
                     <ul>
-                    </ul>
+                        <li>
+                            <div class="tarj-img">
+                                <img src="img/doc1.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr. Alexis Núñez del Prado</h3>
+                                        <h3>(C.M.V.P. 3895)</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>Egresado de la Universidad Nacional Mayor de San Marcos, lleva más de 30 años al servicio veterinario y 25 años como Director Médico de la clínica veterinaria San Marcos. El Dr. Alexis cuenta con una amplia experiencia en animales menores especialmente en el área de cirugía. Además, ha trabajado en el Parque de las Leyendas lo que le permitió adquirir experiencia en animales silvestres.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tarj-img">
+                                <img src="img/doc2.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr. Kelly Núñez del Prado</h3>
+                                        <h3>(C.M.V.P 10954)</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>Egresada de la Universidad Científica del Sur. Cuenta con experiencia en el área de animales menores. Además de ser especialista en felinos. La doctora dirige y gestiona todas las necesidades de los médicos.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tarj-img">
+                                <img src="img/doc3.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr. Vladimir Vásquez </h3>
+                                        <h3>(C.M.V.P 9617)</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>Egresado de la Universidad Alas Peruanas. Posee experiencia en animales menores y patología clínica. El propone la medicina preventiva como valor fundamental en el manejo y la crianza de nuestras mascotas.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="tarj-img">
+                                <img src="img/doc4.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr Victor</h3>
+                                        <h3>(C.M.V.P - - - - )</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>M. V. Victor Daniel Rosasco Aldave egresado de la Universidad Nacional Mayor de San Marcos. Trabajo en la Clinica RPM de Comas como médico de guardia en emergencias. Se desempeñó en Molinera San Martin como médico veterinario supervisor en broilers, como residente en gallinas ponedoras y como subjefe en reproductoras. Trabaja 33 años en el área de pequeños animales.</p>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>  
                 </div>
             </div>
         </section>
@@ -112,13 +180,51 @@
                     <a href=""><img src="icons/flecha1.svg" alt=""></a>
                     <a href=""><img src="icons/flecha2.svg" alt=""></a>
                 </div>
-                <div class="cont">   
+            </div>
+            <div class="cont">
+                <div id="slider-adm">
                     <ul>
+                        <li>
+                            <div class="adm-img">
+                                <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="adm-text">
+                                <h3>Alexis Nuñez del Prado</h3>
+                                <p>Administrador</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adm-img">
+                                <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="adm-text">
+                                <h3>Alexis Nuñez del Prado</h3>
+                                <p>Atención alCliente</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adm-img">
+                                <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="adm-text">
+                                <h3>Alexis Nuñez del Prado</h3>
+                                <p>Asistente</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="adm-img">
+                                <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="adm-text">
+                                <h3>Alexis Nuñez del Prado</h3>
+                                <p>Administrador</p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>
         </section>
-        <section class="Servicios">
+        <section id="servicios" class="Servicios">
             <div class="container">
                 <div class="title">
                     <h2>Servicios</h2>
@@ -189,14 +295,14 @@
         <div class="slider1">
             <div class="scroll text1">
                 <div class="text">
-                    <div class="cont"><img src="icons/icono-map.svg" alt=""> <span>Av San Juan 981, San Juan de Miraflores</span></div>
+                    <div class="cont"><img src="icons/icono-map.svg" alt="lugar"><span>Av San Juan 981, San Juan de Miraflores</span></div>
                     <div class="cont"><img src="icons/icono-telefono.svg" alt="telefono"><span>(+51) 276 4058 - (-51 276 4051)</span></div>
-                    <div class="cont"><img src="icons/icono-email.svg" alt="telefono"><span>contacto@veterinariasanmarcos.com</span></div>
+                    <div class="cont"><img id="email1" src="icons/icono-email.svg" alt="email" class="email" ><span>contacto@veterinariasanmarcos.com</span></div>
                 </div>
                 <div class="text">
-                    <div class="cont"><img src="icons/icono-map.svg" alt=""> <span>Av San Juan 981, San Juan de Miraflores</span></div>
+                    <div class="cont"><img src="icons/icono-map.svg" alt="lugar"> <span>Av San Juan 981, San Juan de Miraflores</span></div>
                     <div class="cont"><img src="icons/icono-telefono.svg" alt="telefono"><span>(+51) 276 4058 - (-51 276 4051)</span></div>
-                    <div class="cont"><img src="icons/icono-email.svg" alt="telefono"><span>contacto@veterinariasanmarcos.com</span></div>
+                    <div class="cont"><img id="email1" class="email" src="icons/icono-email.svg" alt="email"><span>contacto@veterinariasanmarcos.com</span></div>
                 </div>  
             </div>   
         </div>
@@ -230,6 +336,8 @@
                 </div>
             </div>
         </div>
-    </footer>
+    </footer>    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
