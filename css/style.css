@@ -75,18 +75,21 @@ main {
     align-items: center;
     height: 94%; }
     .home .cont .home-part-1 {
-      width: 50%; }
+      width: 50%;
+      padding-right: 50px; }
       .home .cont .home-part-1 .text {
         transform: translateY(-50px); }
       .home .cont .home-part-1 h1 {
-        font-size: 60px;
+        font-size: 3.12vw;
+        /*60px*/
         line-height: 60px;
         color: #0C7633;
         margin-bottom: 20px;
         font-weight: 900; }
       .home .cont .home-part-1 p {
         color: #494748;
-        font-size: 22px;
+        font-size: 1.144vw;
+        /*22*/
         width: 85%;
         margin-bottom: 30px; }
       .home .cont .home-part-1 a {
@@ -98,9 +101,6 @@ main {
         font-size: 20px;
         border-radius: 20px;
         box-shadow: 0px 4px 8px #D7AB00; }
-    .home .cont .home-part-2 img {
-      float: right;
-      width: 602px; }
     .home .cont .home-part-2 .cuadro {
       background-image: url(../img/home1.png);
       background-repeat: no-repeat;
@@ -264,7 +264,8 @@ main {
   .administracion .btn-equipo {
     float: right; }
   .administracion .cont {
-    margin-top: 100px; }
+    margin-top: 100px;
+    height: 380px; }
     .administracion .cont ul {
       width: 100%;
       display: flex;
@@ -656,5 +657,18 @@ main {
 .contact5,
 .contact6,
 .contact7,
-.close {
+.close,
+#btn-right,
+#btn-left {
   cursor: pointer; }
+
+.container-slider {
+  overflow: hidden; }
+
+.slider-adm {
+  width: 300%;
+  display: flex;
+  margin-left: -100%; }
+
+.slider__section {
+  width: 100%; }
