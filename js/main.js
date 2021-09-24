@@ -45,3 +45,66 @@
   
 //   });    
   
+
+var navToggler = document.querySelector(".contact");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+/* close nav when clicking on a nav item */
+document.addEventListener("click", function(e){
+    if(e.target.closest(".close")){
+        toggleNav();
+    }
+});
+
+var navToggler = document.querySelector(".contact2");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+var navToggler = document.querySelector(".contact3");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+var navToggler = document.querySelector(".contact4");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+var navToggler = document.querySelector(".contact5");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+var navToggler = document.querySelector(".contact6");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+var navToggler = document.querySelector(".contact7");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
