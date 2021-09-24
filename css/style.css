@@ -233,8 +233,9 @@ main {
       margin-bottom: 45px;
       box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4); }
       .equipo #slider ul li .tarj-img {
-        height: 384px;
         overflow: hidden; }
+        .equipo #slider ul li .tarj-img img {
+          width: 100%; }
       .equipo #slider ul li .tarj-text .top {
         padding: 10px 20px;
         display: flex;
@@ -269,10 +270,12 @@ main {
       display: flex;
       justify-content: space-between; }
       .administracion .cont ul li {
-        width: 352px;
+        width: 22%;
         list-style: none;
         border-radius: 20px;
         box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4); }
+        .administracion .cont ul li .adm-img img {
+          width: 100%; }
         .administracion .cont ul li .adm-text {
           padding: 5px 20px;
           line-height: 30px;
