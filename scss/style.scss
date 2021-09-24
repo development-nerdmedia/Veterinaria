@@ -15,14 +15,10 @@ $color-text: #494748;
 $color-btn: #FCCA08;
 $back-form-input: rgba(255, 255, 255, 0.12); 
 
-@font-face {
-    font-family: "ProximaNova";
-    src: url("../font/ProximaNova-Regular.woff2");
-}
 
 body{
     background-color: $bg-color;
-    font-family: "ProximaNova";
+    font-family: 'Mukta', sans-serif;
 }
 
 main{
@@ -76,6 +72,10 @@ main{
                 padding-right: 0;
                 padding-left: 0;
             }
+            a.icon-redsocial-inst,
+            a.icon-redsocial{
+                height: 45px;
+            }
             a:hover{
                 color: $color-title;
                 border-bottom: 2px solid $color-title;
@@ -120,7 +120,6 @@ main{
             }
         }
         .home-part-2{
-            width: 50%;
             img{
                 float: right;
                 width: 602px;
@@ -175,7 +174,6 @@ main{
             font-size: 35px;
             white-space: nowrap;
             font-weight: 900;
-            text-transform: uppercase;
             animation: animate 40s linear infinite;
             animation-delay: -40s;
             display: flex;
@@ -199,21 +197,21 @@ main{
             animation-delay: -20s;
         }
         @keyframes animate {
-            // 0%{
-            //     transform:  translateX(100%);
-            // }
-            // 100%{
-            //     transform:  translateX(-100%);
-            // }
+            0%{
+                transform:  translateX(100%);
+            }
+            100%{
+                transform:  translateX(-100%);
+            }
         }
 
         @keyframes animate2 {
-            // 0%{
-            //     transform:  translateX(0%);
-            // }
-            // 100%{
-            //     transform:  translateX(-200%);
-            // }
+            0%{
+                transform:  translateX(0%);
+            }
+            100%{
+                transform:  translateX(-200%);
+            }
         }
     }
 }
@@ -224,6 +222,8 @@ main{
         display: flex;
         .nosotros-part-1{
             width: 50%;
+            display: flex;
+            align-items: center;
             .cont-imgs{
                 padding-right: 50px;
                 height: 550px;
@@ -253,7 +253,6 @@ main{
                 font-size: 60px;
                 font-weight: 900;
                 color: $color-title;
-                margin-bottom: 30px;
                 padding-left: 20px;
             }
             p{
@@ -291,6 +290,7 @@ main{
                 background-color: white;
                 border-radius: 20px;
                 margin-bottom: 45px;
+                box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
                 .tarj-img{
                     height: 384px;
                     overflow: hidden;                
@@ -303,13 +303,20 @@ main{
                         border-bottom: 2px solid rgba(73, 71, 72, 0.2);
                         div{
                             padding-left: 20px;
-                            color: $color-text;                            
+                            color: $color-text;   
+                            h3{
+                                font-size: 25px;
+                                font-weight: 800;
+                                line-height: 25px;
+                                color: $color-text;
+                            }                         
                         }
                     }
                     .bot{
                         padding: 10px 20px;
                         p{
-                            font-size: 20px;
+                            font-size: 22px;
+                            line-height: 25px;
                         }
                     }
                 }
@@ -370,6 +377,14 @@ main{
                 box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
                 .adm-text{
                     padding: 5px 20px;
+                    line-height: 30px;
+                    font-weight: 800;
+                    h3{
+                        font-size: 30px;
+                    }
+                    p{
+                        font-size: 24px;
+                    }
                 }
             }
         }
@@ -430,9 +445,10 @@ main{
             margin-top: 10px;
             font-size: 40px;
             color: $color-text;
+            font-weight: 800;
+            line-height: 35px;
         }
     }
-
 
     
     .adelante, .atras{
@@ -472,6 +488,7 @@ main{
         p{
             font-size: 25px;
             color: $color-text;
+            line-height: 30px;
         }
 
         .boton-tarjeta-atras{
@@ -485,7 +502,7 @@ main{
             text-decoration: none;
             color: $color-title;
             background-color: $color-btn;
-            padding: 16px 67px;
+            padding: 5px 67px;
             box-shadow: 0px 4px 8px #D7AB00;
             border-radius: 20px;
         }
@@ -514,7 +531,6 @@ main{
             font-size: 35px;
             white-space: nowrap;
             font-weight: 900;
-            text-transform: uppercase;
             animation: animate 40s linear infinite;
             animation-delay: -40s;
             display: flex;
@@ -528,6 +544,9 @@ main{
             }
             .cont{
                 padding-left: 50px;
+                display: flex;
+                align-items: center;
+                height: 94%;
                 img#email1{
                     width: 60px;
                 }
@@ -587,8 +606,9 @@ main{
                 a{
                     margin: 0 auto;
                     text-decoration: none;
-                    padding: 14px 48px;
+                    padding: 8px 48px;
                     border-radius: 20px;
+                    font-weight: 800;
                     color: $color-title;
                     background-color: $color-btn;
                 }
