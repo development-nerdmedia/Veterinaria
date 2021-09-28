@@ -1,3 +1,5 @@
+AOS.init();
+
 var navToggler = document.querySelector(".contact");
 navToggler.addEventListener("click", toggleNav);
 
@@ -61,59 +63,167 @@ function toggleNav(){
     document.querySelector(".contacto").classList.toggle("open");
 }
 
-// $('.slidernew').slick({
-//     dots: true,
-//     infinite: true,
-//     autoplay: true,
-//     autoplaySpeed: 6000,
-//     speed: 800,
-//     slidesToShow: 1,
-//     adaptiveHeight: true
-//   });
+// /* carrusel de imagenes equipo administrativo */
+// const slider = document.querySelector("#slider1");
+// let sliderSection = document.querySelectorAll(".slider__section");
+// let sliderSectionLast = sliderSection[sliderSection.length -1];
 
-//   $('.slidernew').slick();
+// const btnRight = document.querySelector("#btn-right");
+// const btnLeft = document.querySelector("#btn-left");
 
-/* carrusel de imagenes equipo administrativo */
-const slider = document.querySelector("#slider1");
-let sliderSection = document.querySelectorAll(".slider__section");
-let sliderSectionLast = sliderSection[sliderSection.length -1];
+// slider.insertAdjacentElement('afterbegin',sliderSectionLast);
 
-const btnRight = document.querySelector("#btn-right");
-const btnLeft = document.querySelector("#btn-left");
+// function Next(){
+//     let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
+//     slider.style.marginLeft = "-200%";
+//     slider.style.transition = "all 0.5s";
+//     setTimeout(function(){
+//         slider.style.transition = "none";
+//         slider.insertAdjacentElement('beforeend', sliderSectionFirst);
+//         slider.style.marginLeft = "-100%";
+//     }, 500);
+// }
 
-slider.insertAdjacentElement('afterbegin',sliderSectionLast);
+// function Prev(){
+//     let sliderSection = document.querySelectorAll(".slider__section");
+//     let sliderSectionLast = sliderSection[sliderSection.length -1];
+//     slider.style.marginLeft = "0";
+//     slider.style.transition = "all 0.5s";
+//     setTimeout(function(){
+//         slider.style.transition = "none";
+//         slider.insertAdjacentElement('afterbegin',sliderSectionLast);
+//         slider.style.marginLeft = "-100%";
+//     }, 500);
+// }
 
-function Next(){
-    let sliderSectionFirst = document.querySelectorAll(".slider__section")[0];
-    slider.style.marginLeft = "-200%";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('beforeend', sliderSectionFirst);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+// btnLeft.addEventListener('click', function(){
+//     Next();
+// });
+
+// btnRight.addEventListener('click', function(){
+//     Prev();
+// });
+
+// setInterval(function(){
+//     Next();
+// }, 5000);
+
+function cambiar(imgchange){
+  document.getElementById('cuadro').style.backgroundImage = imgchange;  
+  document.getElementById('title1').style.display='block';
+  document.getElementById('title2').style.display='none';
+  document.getElementById('title3').style.display='none';
+  document.getElementById('title4').style.display='none';
 }
 
-function Prev(){
-    let sliderSection = document.querySelectorAll(".slider__section");
-    let sliderSectionLast = sliderSection[sliderSection.length -1];
-    slider.style.marginLeft = "0";
-    slider.style.transition = "all 0.5s";
-    setTimeout(function(){
-        slider.style.transition = "none";
-        slider.insertAdjacentElement('afterbegin',sliderSectionLast);
-        slider.style.marginLeft = "-100%";
-    }, 500);
+function cambiartexto(){
+  document.getElementById('title1').style.display='block';
+  document.getElementById('title2').style.display='none';
+  document.getElementById('title3').style.display='none';
+  document.getElementById('title4').style.display='none';
 }
 
-btnLeft.addEventListener('click', function(){
-    Next();
-});
+function cambiartexto2(){
+  document.getElementById('title1').style.display='none';
+  document.getElementById('title2').style.display='block';
+  document.getElementById('title3').style.display='none';
+  document.getElementById('title4').style.display='none';
+}
 
-btnRight.addEventListener('click', function(){
-    Prev();
-});
+function cambiartexto3(){
+  document.getElementById('title1').style.display='none';
+  document.getElementById('title2').style.display='none';
+  document.getElementById('title3').style.display='block';
+  document.getElementById('title4').style.display='none';
+}
 
-setInterval(function(){
-    Next();
-}, 5000);
+function cambiartexto4(){
+  document.getElementById('title1').style.display='none';
+  document.getElementById('title2').style.display='none';
+  document.getElementById('title3').style.display='none';
+  document.getElementById('title4').style.display='block';
+}
+
+function cambiarcolor(col,colnn){
+  document.getElementById('btn1').style.backgroundColor = col; 
+  document.getElementById('btn2').style.backgroundColor = colnn; 
+  document.getElementById('btn3').style.backgroundColor = colnn; 
+  document.getElementById('btn4').style.backgroundColor = colnn; 
+  document.getElementById('btn1').style.color = '#FFF';
+  document.getElementById('btn2').style.color = '#494748';
+  document.getElementById('btn3').style.color = '#494748';
+  document.getElementById('btn4').style.color = '#494748';
+}
+
+function cambiarcolor2(col,colnn){
+  document.getElementById('btn1').style.backgroundColor = colnn; 
+  document.getElementById('btn2').style.backgroundColor = col; 
+  document.getElementById('btn3').style.backgroundColor = colnn; 
+  document.getElementById('btn4').style.backgroundColor = colnn; 
+  document.getElementById('btn2').style.color = '#FFF';
+  document.getElementById('btn1').style.color = '#494748';
+  document.getElementById('btn3').style.color = '#494748';
+  document.getElementById('btn4').style.color = '#494748';
+}
+
+function cambiarcolor3(col,colnn){
+  document.getElementById('btn1').style.backgroundColor = colnn; 
+  document.getElementById('btn2').style.backgroundColor = colnn; 
+  document.getElementById('btn3').style.backgroundColor = col; 
+  document.getElementById('btn4').style.backgroundColor = colnn; 
+  document.getElementById('btn3').style.color = '#FFF';
+  document.getElementById('btn2').style.color = '#494748';
+  document.getElementById('btn1').style.color = '#494748';
+  document.getElementById('btn4').style.color = '#494748';
+}
+
+function cambiarcolor4(col,colnn){
+  document.getElementById('btn1').style.backgroundColor = colnn; 
+  document.getElementById('btn2').style.backgroundColor = colnn; 
+  document.getElementById('btn3').style.backgroundColor = colnn; 
+  document.getElementById('btn4').style.backgroundColor = col; 
+  document.getElementById('btn4').style.color = '#FFF';
+  document.getElementById('btn2').style.color = '#494748';
+  document.getElementById('btn3').style.color = '#494748';
+  document.getElementById('btn1').style.color = '#494748';
+}
+
+$(document).ready(function(){
+    $('.responsive').slick({
+        dots: true,
+        infinite: true,
+        speed: 300,
+        slidesToShow: 4,
+        slidesToScroll: 4,
+        adaptiveHeight: true,
+        responsive: [
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+              infinite: true,
+              dots: true
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+          // You can unslick at a given breakpoint now by adding:
+          // settings: "unslick"
+          // instead of a settings object
+        ]
+      });
+    $('.slider-equipo').slick();
+  });
