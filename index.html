@@ -5,6 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Veterianria S.M. | Inicio</title>
 </head>
 <body>
@@ -13,12 +16,12 @@
             <a href="#" class="logo"><img src="img/logo-vet.jpg" alt="Logo-Veterinaria"></a>
             <nav class="navigation">
                 <ul>
-                    <li><a href="#nosotros" class="btn-nav">Nosotros</a></li>
-                    <li><a href="#servicios" class="btn-nav">Servicio</a></li>
-                    <li><a href="#equipo" class="btn-nav">Equipo</a></li>
-                    <li><a class="contact btn-nav">Contacto</a></li>
-                    <li><a href="#" class="icon-redsocial"><img src="icons/logo-facebook.svg" alt="logo-facebook"></a></li>
-                    <li><a href="#" class="icon-redsocial-inst"><img src="icons/logo-instagram.svg" alt="logo-instagram"></a></li>
+                    <li><a href="#nosotros" class="btn-nav hvr-underline-from-left">Nosotros</a></li>
+                    <li><a href="#servicios" class="btn-nav hvr-underline-from-left">Servicio</a></li>
+                    <li><a href="#equipo" class="btn-nav hvr-underline-from-left">Equipo</a></li>
+                    <li><a class="contact btn-nav hvr-underline-from-left">Contacto</a></li>
+                    <li><a href="#" class="icon-redsocial hvr-float"><img src="icons/logo-facebook.svg" alt="logo-facebook"></a></li>
+                    <li><a href="#" class="icon-redsocial-inst hvr-float"><img src="icons/logo-instagram.svg" alt="logo-instagram"></a></li>
                 </ul>
             </nav>            
         </div>
@@ -52,9 +55,9 @@
                             <a class="close"><img src="icons/cruz.svg" alt=""></a>
                         </div>
                         <div class="contacto-imgs">
-                            <img class="img1" src="img/nosotros1.png" alt="">
-                            <img class="img2" src="img/nosotros2.png" alt="">
-                            <img class="img3" src="img/nosotros3.png" alt="">
+                            <img class="img1 hvr-float" src="img/nosotros1.png" alt="">
+                            <img class="img2 hvr-float" src="img/nosotros2.png" alt="">
+                            <img class="img3 hvr-float" src="img/nosotros3.png" alt="">
                         </div> 
                     </div>
                 </div>
@@ -78,21 +81,24 @@
         <section class="home">
             <div class="container">
                 <div class="cont">
-                    <div class="home-part-1">
+                    <div class="home-part-1" data-aos="fade-right">
                         <div class="text">
-                            <h1>Te esperamos en los siguientes horarios</h1>
+                            <h1 id="title1">Te esperamos en los siguientes horarios</h1>
+                            <h1 id="title2">Veterinarios al servicio de tus mascotas</h1>
+                            <h1 id="title3">Tratamientos especializados y personalizados</h1>
+                            <h1 id="title4">Tenemos todo lo necesario para el cuidado de tus mascotas</h1>
                             <p><b>Lun a Sáb:</b> 9:30am a 8:30pm <br>
                             <b>Dom:</b> 9:30am a 1:30pm</p>
-                            <a class="contact2">CONTÁCTANOS</a>
+                            <a class="contact2 btn-hover-contact">CONTÁCTANOS</a>
                         </div>                        
                     </div>
-                    <div class="home-part-2">
-                        <div class="cuadro">
+                    <div class="home-part-2" data-aos="fade-left">
+                        <div id="cuadro" class="cuadro">
                             <div class="btn-home">
-                                <a href="#">1</a>
-                                <a href="#">2</a>
-                                <a href="#">3</a>
-                                <a href="#">4</a>
+                                <a id="btn1" onclick="cambiar('url(img/home1.png)'),cambiarcolor('#0C7633','#FFF'),cambiartexto()">1</a>
+                                <a id="btn2" onclick="cambiar('url(img/home2.png)'),cambiarcolor2('#0C7633','#FFF'),cambiartexto2()">2</a>
+                                <a id="btn3" onclick="cambiar('url(img/home3.png)'),cambiarcolor3('#0C7633','#FFF'),cambiartexto3()">3</a>
+                                <a id="btn4" onclick="cambiar('url(img/home4.png)'),cambiarcolor4('#0C7633','#FFF'),cambiartexto4()">4</a>
                             </div>
                         </div>                    
                     </div>
@@ -118,19 +124,19 @@
         <section id="nosotros" class="nosotros">
             <div class="container">
                 <div class="cont">
-                    <div class="nosotros-part-1">
+                    <div class="nosotros-part-1" data-aos="fade-right">
                         <div class="cont-imgs">
-                            <img class="img1" src="img/nosotros1.png" alt="">
-                            <img class="img2" src="img/nosotros2.png" alt="">
-                            <img class="img3" src="img/nosotros3.png" alt="">
+                            <img class="img1 hvr-float"  src="img/nosotros1.png" alt="">
+                            <img class="img2 hvr-float" src="img/nosotros2.png" alt="">
+                            <img class="img3 hvr-float" src="img/nosotros3.png" alt="">
                         </div>                      
                     </div>
-                    <div class="nosotros-part-2">
+                    <div class="nosotros-part-2" data-aos="fade-left">
                         <h2>Nosotros</h2>
                         <p>Abrimos nuestras puertas en 1989 con el compromiso de mejorar la 
                             calidad de vida de nuestras mascotas. Entregando cuidados y 
                             atención especializada, teniendo en cuenta que son un miembro 
-                            más de nuestras familias. <br> <br> Nuestra misión es brindar un 
+                            más de nuestras familias. <br><br> Nuestra misión es brindar un 
                             servicio de salud de calidad, para ello contamos con personal 
                             especializado en diversas áreas de medicina y cirugía de animales 
                             menores. Tenemos como visión ser una clínica veterinaria de 
@@ -147,16 +153,16 @@
 
         <section id="equipo" class="equipo">
             <div class="container">
-                <div class="title">
+                <div class="title" data-aos="fade-right">
                     <h2>Equipo Veterinario</h2>
                 </div>                
-                <div class="btn-equipo">
+                <!-- <div class="btn-equipo" data-aos="fade-left">
                     <a  class="control_prev"><img src="icons/flecha1.svg" alt=""></a>
                     <a  class="control_next"><img src="icons/flecha2.svg" alt=""></a>
-                </div>
-                <div id="slider">
+                </div> -->
+                <div id="slider" class="slider-equipo" data-aos="fade-right">
                     <ul>
-                        <li>
+                        <li class="hvr-float">
                             <div class="tarj-img">
                                 <img src="img/doc1.png" alt="">
                             </div>
@@ -173,7 +179,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hvr-float">
                             <div class="tarj-img">
                                 <img src="img/doc2.png" alt="">
                             </div>
@@ -190,7 +196,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hvr-float">
                             <div class="tarj-img">
                                 <img src="img/doc3.png" alt="">
                             </div>
@@ -207,7 +213,7 @@
                                 </div>
                             </div>
                         </li>
-                        <li>
+                        <li class="hvr-float">
                             <div class="tarj-img">
                                 <img src="img/doc4.png" alt="">
                             </div>
@@ -224,6 +230,59 @@
                                 </div>
                             </div>
                         </li>
+                    </ul> 
+                    <ul>
+                        <li class="hvr-float">
+                            <div class="tarj-img">
+                                <img src="img/doc1.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr. Alexis Núñez del Prado</h3>
+                                        <h3>(C.M.V.P. 3895)</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>Egresado de la Universidad Nacional Mayor de San Marcos, lleva más de 30 años al servicio veterinario y 25 años como Director Médico de la clínica veterinaria San Marcos. El Dr. Alexis cuenta con una amplia experiencia en animales menores especialmente en el área de cirugía. Además, ha trabajado en el Parque de las Leyendas lo que le permitió adquirir experiencia en animales silvestres.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-float">
+                            <div class="tarj-img">
+                                <img src="img/doc2.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr. Kelly Núñez del Prado</h3>
+                                        <h3>(C.M.V.P 10954)</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>Egresada de la Universidad Científica del Sur. Cuenta con experiencia en el área de animales menores. Además de ser especialista en felinos. La doctora dirige y gestiona todas las necesidades de los médicos.</p>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="hvr-float">
+                            <div class="tarj-img">
+                                <img src="img/doc3.png" alt="">
+                            </div>
+                            <div class="tarj-text">
+                                <div class="top">
+                                    <img src="icons/icono-doc.svg" alt="">
+                                    <div>
+                                        <h3>Dr. Vladimir Vásquez </h3>
+                                        <h3>(C.M.V.P 9617)</h3>
+                                    </div>                                        
+                                </div>
+                                <div class="bot">
+                                    <p>Egresado de la Universidad Alas Peruanas. Posee experiencia en animales menores y patología clínica. El propone la medicina preventiva como valor fundamental en el manejo y la crianza de nuestras mascotas.</p>
+                                </div>
+                            </div>
+                        </li>
                     </ul>  
                 </div>
             </div>
@@ -234,248 +293,98 @@
                 <div class="title">
                     <h2>Equipo Administrativo</h2>
                 </div>                
-                <div class="btn-equipo">
+                <!-- <div class="btn-equipo">
                     <a class="slider__btn slider__btn--right" id="btn-right"><img src="icons/flecha1.svg" alt=""></a>
                     <a class="slider__btn slider__btn--left" id="btn-left"><img src="icons/flecha2.svg" alt=""></a>
-                </div>
+                </div> -->
             </div>
             <div class="cont">
                 <div class="container-slider">
-                    <div id="slider1" class="slider-adm">
-                        <!-- <ul>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
+                    <div id="slider-adm" class="slidernew">
+                        <div class="responsive">
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Andrea Salas Saldaña</h3>
+                                        <p>Administrador</p>
+                                    </div>
                                 </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Administrador</p>
+                            </div>
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Alexis Nuñez del Prado</h3>
+                                        <p>Atención al Client</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Emilio Pardo Perez</h3>
+                                        <p>Asistente</p>
+                                    </div>
                                 </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Atención alCliente</p>
+                            </div>
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Jeanpiere Garcia Quiroz</h3>
+                                        <p>Groomer</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Stefany vera Gomez</h3>
+                                        <p>Contador</p>
+                                    </div>
                                 </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Asistente</p>
+                            </div>
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Martin Avila</h3>
+                                        <p>Administrador</p>
+                                    </div>
                                 </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
+                            </div>
+                            <div class="card hvr-float">
+                                <div class="tarjeta-adm">
+                                    <div class="adm-img">
+                                        <img src="img/adm1.png" alt="">
+                                    </div>
+                                    <div class="adm-text">
+                                        <h3>Valeria Miro</h3>
+                                        <p>Secretario</p>
+                                    </div>
                                 </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Groomer</p>
-                                </div>
-                            </li>
-                        </ul> -->
-                        <ul class="slider__section">
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Administrador</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Atención alCliente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Asistente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Groomer</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul class="slider__section">
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Administrador</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Atención alCliente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Asistente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Groomer</p>
-                                </div>
-                            </li>
-                        </ul> 
-                        <ul class="slider__section">
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Administrador</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Atención alCliente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Asistente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Groomer</p>
-                                </div>
-                            </li>
-                        </ul>                                    
+                            </div>
+                        </div>                       
                     </div>
-                    <!-- <div id="slider-adm" class="slidernew">
-                        <ul>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>asdasd del Prado</h3>
-                                    <p>Administrador</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Atención alCliente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Asistente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Groomer</p>
-                                </div>
-                            </li>
-                        </ul>
-                        <ul>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Administrador</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Atención alCliente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Asistente</p>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="adm-img">
-                                    <img src="img/adm1.png" alt="">
-                                </div>
-                                <div class="adm-text">
-                                    <h3>Alexis Nuñez del Prado</h3>
-                                    <p>Groomer</p>
-                                </div>
-                            </li>
-                        </ul>
-                    </div> -->
                 </div>                
             </div>
         </section>
+
         <section id="servicios" class="Servicios">
             <div class="container">
                 <div class="title">
@@ -589,7 +498,11 @@
             </div>
         </div>
     </footer>    
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    
     <script src="js/main.js"></script>
 </body>
 </html>
