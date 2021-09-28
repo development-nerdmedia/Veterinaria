@@ -22,7 +22,7 @@ main {
 
 .container-slider {
   width: 85%;
-  max-width: 1701px;
+  max-width: 1111px;
   margin: 0 auto;
   height: 100%; }
 
@@ -80,8 +80,8 @@ main {
       .home .cont .home-part-1 .text {
         transform: translateY(-50px); }
       .home .cont .home-part-1 h1 {
-        font-size: 3.12vw;
-        /*60px*/
+        font-size: 60px;
+        /*60px 3.12vw*/
         line-height: 60px;
         color: #0C7633;
         margin-bottom: 20px;
@@ -94,8 +94,8 @@ main {
         display: none; }
       .home .cont .home-part-1 p {
         color: #494748;
-        font-size: 1.144vw;
-        /*22*/
+        font-size: 22px;
+        /*22 1.144vw*/
         width: 85%;
         margin-bottom: 30px; }
       .home .cont .home-part-1 a {
@@ -337,7 +337,7 @@ main {
         height: 100% !important; }
         .administracion .cont .responsive .card .tarjeta-adm {
           border-radius: 20px;
-          width: 88%;
+          width: 92%;
           box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4); }
           .administracion .cont .responsive .card .tarjeta-adm .adm-img img {
             width: 100%; }
@@ -393,13 +393,13 @@ main {
   .administracion .slick-arrow:hover,
   .administracion .slick-arrow:focus {
     top: -140px;
-    right: 253px;
+    right: 0px;
     /*20*/ }
   .administracion .slick-prev,
   .administracion .slick-prev:focus,
   .administracion .slick-prev:hover {
     left: inherit;
-    right: 308px;
+    right: 55px;
     /*75*/ }
 
 .Servicios {
@@ -572,7 +572,6 @@ main {
         background-color: #FCCA08; }
       .footer .bg-footer .container .contfoot a:hover {
         background-color: #96C11E;
-        color: #FCCA08;
         box-shadow: 0px 4px 8px #96C11E;
         transition: 0.2s all; }
 
@@ -617,6 +616,8 @@ main {
   position: fixed;
   transition: transform 0.5s ease;
   transform: translateX(100%); }
+  .contacto .none-close {
+    display: none; }
   .contacto .btn-close {
     float: right;
     transform: translateY(-50px); }
@@ -904,3 +905,129 @@ main {
 .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
   background-color: #96C11E;
   color: white; }
+
+@media (max-width: 1440px) {
+  .header {
+    padding: 10px 0; }
+    .header a.logo {
+      display: flex;
+      align-items: center; }
+      .header a.logo img {
+        width: 160px; }
+  .slider .scroll {
+    padding: 5px 0; }
+  .contacto {
+    padding: 50px 0; }
+  .contacto .cont .contacto-part1 textarea {
+    height: 130px !important; }
+  .contacto .cont .contacto-part2 .contacto-imgs .img3 {
+    bottom: 50px; } }
+
+@media (max-width: 1024px) {
+  .container {
+    width: 90%; }
+  /*HOME*/
+  .home .cont .home-part-1 h1 {
+    font-size: 55px; }
+  .home .cont .home-part-1 p {
+    font-size: 20px; }
+  .home-part-2 {
+    width: 50%; }
+  .home .cont .home-part-2 #cuadro {
+    width: 100%; }
+  .home .cont .home-part-1 {
+    padding-right: 0; }
+  /*seccion nosotros*/
+  .nosotros {
+    padding: 80px 0; }
+  .nosotros .cont .nosotros-part-1 .cont-imgs {
+    padding-right: 50px;
+    height: auto; }
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
+    width: 260px;
+    float: right; }
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
+    width: 207px; }
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
+    float: right;
+    width: 160px; }
+  .nosotros .cont .nosotros-part-2 h2 {
+    font-size: 45px; }
+  .nosotros .cont .nosotros-part-2 p {
+    font-size: 20px; }
+  /*seccion equipo*/
+  .equipo {
+    padding: 80px 0; }
+  .equipo .title h2 {
+    font-size: 45px; }
+  .equipo div#slider {
+    margin-top: 50px; }
+  .equipo .slick-arrow, .equipo .slick-arrow:hover, .equipo .slick-arrow:focus {
+    top: -90px; }
+  .equipo #slider ul li .tarj-img {
+    overflow: hidden;
+    height: 317px; }
+  .equipo #slider ul li .tarj-text .top img {
+    width: 31px; }
+  .equipo #slider ul li .tarj-text .bot p {
+    font-size: 20px; }
+  .equipo #slider ul li {
+    min-height: auto; }
+  /*Equipo Administracion*/
+  .administracion {
+    padding: 80px 0; }
+  .administracion .cont {
+    margin-top: 50px;
+    height: 400px; }
+  .administracion .slick-arrow, .administracion .slick-arrow:hover, .administracion .slick-arrow:focus {
+    top: -90px; }
+  .administracion .title h2 {
+    font-size: 45px; }
+  .administracion .cont .responsive .card .tarjeta-adm {
+    width: 80%; }
+  .administracion .cont .responsive .card .tarjeta-adm .adm-text h3 {
+    font-size: 25px; }
+  .administracion .cont .responsive .card .tarjeta-adm .adm-text p {
+    font-size: 20px; }
+  /*servicios*/
+  .Servicios {
+    padding: 80px 0; }
+  .Servicios .title h2 {
+    font-size: 45px; }
+  .Servicios .tarjeta-wrap {
+    width: 46%; }
+  .Servicios .adelante p {
+    font-size: 30px; }
+  .Servicios .adelante img {
+    width: 124px; }
+  /*slider 2*/
+  .slider1 .scroll {
+    padding: 5px 0; }
+  .slider1 .scroll .text {
+    height: 40px; }
+  /*footer*/
+  .footer .bg-footer {
+    height: 109px; }
+  .footer .bg-footer .container .contfoot .text-footer {
+    text-align: left; }
+  .footer .bg-footer .container .contfoot h3 {
+    font-size: 30px; }
+  .footer .bg-footer .container .contfoot a {
+    font-size: 20px;
+    padding: 5px 48px;
+    box-shadow: 0px 4px 8px #D7AB00; }
+  /*contacto*/
+  .contacto .cont {
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .contacto .cont .contacto-part1 {
+    color: white;
+    width: 529px; }
+  .contacto .cont .contacto-part2 {
+    display: none; }
+  .contacto .none-close {
+    display: block;
+    width: 1px;
+    transform: translate(60px, -100px); } }
