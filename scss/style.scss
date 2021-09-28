@@ -34,7 +34,7 @@ main{
 
 .container-slider{
     width: 85%;
-    max-width: 1701px;
+    max-width: 1111px;
     margin: 0 auto;
     height: 100%;
 }
@@ -105,7 +105,7 @@ main{
                 transform: translateY(-50px);
             }
             h1{
-                font-size: 3.12vw;/*60px*/
+                font-size: 60px;/*60px 3.12vw*/
                 line-height: 60px;
                 color: $color-title;
                 margin-bottom: 20px;
@@ -122,7 +122,7 @@ main{
             }
             p{
                 color: $color-text;
-                font-size: 1.144vw; /*22*/
+                font-size: 22px; /*22 1.144vw*/
                 width: 85%;
                 margin-bottom: 30px;
             }
@@ -455,7 +455,7 @@ main{
                 height: 100% !important;
                 .tarjeta-adm{
                     border-radius: 20px;
-                    width: 88%;
+                    width: 92%;
                     box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
                     .adm-img{
                         img{
@@ -545,13 +545,13 @@ main{
     .slick-arrow:hover,
     .slick-arrow:focus {
         top: -140px;
-        right: 253px;/*20*/
+        right: 0px;/*20*/
     }
     .slick-prev,
     .slick-prev:focus,
     .slick-prev:hover {
         left: inherit;
-        right: 308px;/*75*/
+        right: 55px;/*75*/
     }
 //     .slick-next {
 //         transform: rotate(-180deg);
@@ -787,7 +787,7 @@ main{
                 }
                 a:hover{
                     background-color: #96C11E;
-                    color: $color-btn;
+                    // color: $color-btn;
                     box-shadow: 0px 4px 8px #96C11E;
                     transition: 0.2s all;
                 }
@@ -845,6 +845,9 @@ main{
     position: fixed;
     transition: transform 0.5s ease;
     transform: translateX(100%);
+    .none-close{
+        display: none;
+    }
     .btn-close{
         float: right;
         transform: translateY(-50px);
@@ -1124,15 +1127,15 @@ main{
       color: #FCCA08;
       box-shadow: 0px 4px 8px #0C7633;
     }
-  }
-  @keyframes hvr-back-pulse {
+}
+@keyframes hvr-back-pulse {
     50% {
       background-color: #0C7633;
       color: #FCCA08;
       box-shadow: 0px 4px 8px #0C7633;
     }
-  }
-  .hvr-back-pulse {
+}
+.hvr-back-pulse {
     display: inline-block;
     vertical-align: middle;
     -webkit-transform: perspective(1px) translateZ(0);
@@ -1143,8 +1146,8 @@ main{
     transition-duration: 0.5s;
     -webkit-transition-property: color, background-color;
     transition-property: color, background-color;
-  }
-  .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+}
+.hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
     -webkit-animation-name: hvr-back-pulse;
     animation-name: hvr-back-pulse;
     -webkit-animation-duration: 1s;
@@ -1158,7 +1161,7 @@ main{
     background-color: #2098D1;
     background-color: #2098d1;
     color: #FCCA08;
-  }
+}
 
 /* Fade */
 .hvr-fade {
@@ -1172,9 +1175,197 @@ main{
     transition-duration: 0.3s;
     -webkit-transition-property: color, #96C11E;
     transition-property: color, #96C11E;
-  }
-  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+}
+.hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
     background-color: #96C11E;
     color: white;
-  }
+}
 
+@media (max-width: 1440px) {
+    .header{
+        padding: 10px 0;
+        a.logo{
+            display: flex;
+            align-items: center;
+            img{
+                width: 160px;
+            }
+        }
+    }
+    .slider{
+        .scroll{
+            padding: 5px 0;
+        }
+    }
+    
+    .contacto{
+        padding: 50px 0;
+    }
+
+    .contacto .cont .contacto-part1 textarea {
+        height: 130px !important;
+    }
+
+    .contacto .cont .contacto-part2 .contacto-imgs .img3 {
+        bottom: 50px;
+    }
+}
+
+@media (max-width: 1024px) {
+
+    .container {
+        width: 90%;
+    }
+
+    /*HOME*/
+    .home .cont .home-part-1 h1 {
+        font-size: 55px;
+    }
+    .home .cont .home-part-1 p {
+        font-size: 20px;
+    }
+    .home-part-2{
+        width: 50%;
+    }
+    .home .cont .home-part-2 #cuadro {
+        width: 100%;
+    }
+    .home .cont .home-part-1 {
+        padding-right: 0;
+    }
+
+    /*seccion nosotros*/
+    .nosotros {
+        padding: 80px 0;
+    }
+    .nosotros .cont .nosotros-part-1 .cont-imgs {
+        padding-right: 50px;
+        height: auto;
+    }
+    .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
+        width: 260px;
+        float: right;
+    }
+    .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
+        width: 207px;
+    }
+    .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
+        float: right;
+        width: 160px;
+    }
+    .nosotros .cont .nosotros-part-2 h2 {
+        font-size: 45px;
+    }
+    .nosotros .cont .nosotros-part-2 p {
+        font-size: 20px;
+    }
+
+    /*seccion equipo*/
+    .equipo{
+        padding: 80px 0;
+    }    
+    .equipo .title h2 {
+        font-size: 45px;
+    }
+    .equipo div#slider {
+        margin-top: 50px;
+    }
+    .equipo .slick-arrow, .equipo .slick-arrow:hover, .equipo .slick-arrow:focus {
+        top: -90px;
+    }
+    .equipo #slider ul li .tarj-img {
+        overflow: hidden;
+        height: 317px;
+    }
+    .equipo #slider ul li .tarj-text .top img{
+        width: 31px;
+    }
+    .equipo #slider ul li .tarj-text .bot p {
+        font-size: 20px;
+    }
+    .equipo #slider ul li {
+        min-height: auto;
+    }
+
+    /*Equipo Administracion*/
+    .administracion {
+        padding: 80px 0;
+    }
+    .administracion .cont {
+        margin-top: 50px;
+        height: 400px;
+    }
+    .administracion .slick-arrow, .administracion .slick-arrow:hover, .administracion .slick-arrow:focus {
+        top: -90px;
+    }
+    .administracion .title h2 {
+        font-size: 45px;
+    }
+    .administracion .cont .responsive .card .tarjeta-adm {
+        width: 80%;
+    }
+    .administracion .cont .responsive .card .tarjeta-adm .adm-text h3 {
+        font-size: 25px;
+    }
+    .administracion .cont .responsive .card .tarjeta-adm .adm-text p {
+        font-size: 20px;
+    }
+    /*servicios*/
+    .Servicios {
+        padding: 80px 0;
+    }
+    .Servicios .title h2 {
+        font-size: 45px;
+    }
+    .Servicios .tarjeta-wrap {
+        width: 46%;
+    }
+    .Servicios .adelante p {
+        font-size: 30px;
+    }
+    .Servicios .adelante img{
+        width: 124px;
+    }
+    /*slider 2*/
+    .slider1 .scroll {
+        padding: 5px 0;
+    }
+    .slider1 .scroll .text {
+        height: 40px;
+    }
+    /*footer*/
+    .footer .bg-footer {
+        height: 109px;
+    }
+    .footer .bg-footer .container .contfoot .text-footer {
+        text-align: left; 
+    }
+    .footer .bg-footer .container .contfoot h3 {
+        font-size: 30px;
+    }
+    .footer .bg-footer .container .contfoot a {
+        font-size: 20px;
+        padding: 5px 48px;
+        box-shadow: 0px 4px 8px #D7AB00;
+    }
+    /*contacto*/
+    .contacto .cont {
+        padding-top: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .contacto .cont .contacto-part1 {
+        color: white;
+        width: 529px;
+    }
+    .contacto .cont .contacto-part2 {
+        display: none;
+    }
+
+    .contacto .none-close{
+        display: block;
+        width: 1px;
+        transform: translate(60px,-100px);
+    }
+}
