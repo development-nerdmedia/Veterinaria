@@ -54,6 +54,10 @@ main{
     text-decoration: none;
 }
 
+.header a.logo {
+    height: 57px;
+}
+
 .logo-nav-container{
     display: flex;
     justify-content: space-between;
@@ -71,24 +75,19 @@ main{
             display: inline-block;
             a{
                 display: block;
-                padding: 0.5rem 1rem;
+                margin: 0.5rem 1rem;
                 font-size: 20px;
                 font-weight: 800;
             }
             a.icon-redsocial-inst{
-                padding-right: 0;
-                padding-left: 0;
+                margin-right: 0;
+                margin-left: 0;
             }
             a.icon-redsocial-inst,
             a.icon-redsocial{
-                height: 45px;
-            }
-            a:hover{
-                color: $color-title;
-                border-bottom: 2px solid $color-title;
-            }
-        }
-        
+                height: 29px;
+            }            
+        }        
     }    
 }
 
@@ -112,6 +111,15 @@ main{
                 margin-bottom: 20px;
                 font-weight: 900;
             }
+            h1#title2{
+                display: none;
+            }
+            h1#title3{
+                display: none;
+            }
+            h1#title4{
+                display: none;
+            }
             p{
                 color: $color-text;
                 font-size: 1.144vw; /*22*/
@@ -129,13 +137,19 @@ main{
                 border-radius: 20px;
                 box-shadow: 0px 4px 8px #D7AB00;
             }
+            a:hover{
+                background-color: #0C7633;
+                color: $color-btn;
+                box-shadow: 0px 4px 8px #0C7633;
+                transition: 0.2s all;
+            }
         }
         .home-part-2{
             // img{
             //     float: right;
             //     width: 602px;
             // }
-            .cuadro{
+            #cuadro{
                 background-image: url(../img/home1.png);
                 background-repeat: no-repeat;
                 width: 602px;
@@ -159,11 +173,15 @@ main{
                     background-color: white;
                     color: $color-text;
                 }
-
-                a:hover{
+                a#btn1{
                     background-color: $color-title;
-                    color: white;
+                    color: #fff;
                 }
+                a:hover{
+                    background-color: $color-title !important;
+                    color: white !important;
+                }
+
             }
         }
     }    
@@ -271,6 +289,7 @@ main{
                 font-size: 22px;
                 color: $color-text;
                 padding-left: 20px;
+                line-height: 30px;
             }
         }
     }
@@ -295,6 +314,7 @@ main{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
+            padding-top: 10px;
             li{
                 width: 48.6%;/*48.6*/
                 min-height: 686px;
@@ -303,6 +323,7 @@ main{
                 border-radius: 20px;
                 margin-bottom: 45px;
                 box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
+                min-height: 705.9px;
                 .tarj-img{
                     overflow: hidden;  
                     img{
@@ -336,6 +357,69 @@ main{
                 }
             }            
         }
+        ul.slick-cloned{
+            li{
+                box-shadow: none;
+            }
+        }
+    }
+    .slick-arrow{
+        background-image: url(../icons/flecha1.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 0;
+        font-size: 0;
+        width: 2.5vw;
+        cursor: pointer;
+        height: 2.5vw;
+        top: 45%;
+    }
+
+    .slick-prev, .slick-next{
+        // background-color: $color-title;
+        border-radius: 20px;
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        // top: 0 !important;        
+    }
+    // .slick-prev, .slick-next:hover{
+    // }
+
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        background-image: url(../icons/flecha1.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 0;
+        font-size: 0;
+        cursor: pointer;
+        top: 45%;
+        position: absolute;
+        // top: 0;
+    }
+    .slick-next{
+        background-image: url(../icons/flecha2.svg) !important;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        // transform: none !important;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        content: none;
+    }
+    /*probando poner arriba*/
+
+    .slick-arrow,
+    .slick-arrow:hover,
+    .slick-arrow:focus {
+        top: -140px;
+        right: 0px;/*20*/
+    }
+    .slick-prev,
+    .slick-prev:focus,
+    .slick-prev:hover {
+        left: inherit;
+        right: 55px;/*75*/
     }
 }
 
@@ -351,33 +435,127 @@ main{
     }
     .cont{
         margin-top: 100px;
-        height: 380px;
-        ul{
-            width: 100%;
-            display: flex;            
-            justify-content: space-between;
-            li{
-                width: 22%;
-                list-style: none;
-                border-radius: 20px;
-                box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
-                .adm-img img{
-                    width: 100%;
-                }
-                .adm-text{
-                    padding: 5px 20px;
-                    line-height: 30px;
-                    font-weight: 800;
-                    h3{
-                        font-size: 30px;
+        height: 400px;
+        .responsive{
+            position: relative;
+            // width: 85%;
+            // max-width: 1111px;
+            // margin: 0 auto;
+            // button.slick-prev{
+            //     margin-left: 17.32%;
+            //     right: 0;
+            // }
+            // button.slick-next{
+            //     margin-right: 15.5%;
+            //     right: 0;
+            // }
+            .card{
+                display: flex;
+                justify-content: center;
+                height: 100% !important;
+                .tarjeta-adm{
+                    border-radius: 20px;
+                    width: 88%;
+                    box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
+                    .adm-img{
+                        img{
+                            width: 100%;
+                        }
                     }
-                    p{
-                        font-size: 24px;
+                    .adm-text{
+                        padding: 11px 20px;
+                        font-weight: 800;
+                        line-height: 30px;
+                        color: $color-text;
+                        h3{
+                            font-size: 30px;
+                        }
+                        p{
+                            font-size: 24px;
+                        }
                     }
                 }
             }
-        }
+            .slick-dots{
+                display: none !important;
+            }
+        }        
     }
+    .slick-dotted.slick-slider {
+        height: 100% !important;
+    }
+    
+    .slick-list.draggable {
+        height: 100% !important;
+        padding-top: 10px;
+    }   
+    
+    div#slider-adm {
+        height: 100% !important;
+    }
+
+    .slick-arrow{
+        background-image: url(../icons/flecha1.svg);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        border: 0;
+        font-size: 0;
+        width: 2.5vw;
+        cursor: pointer;
+        height: 2.5vw;
+        top: 45%;
+    }
+
+    .slick-prev, .slick-next{
+        // background-color: $color-title;
+        border-radius: 20px;
+        position: absolute;
+        width: 47px;
+        height: 47px;
+        // top: 0 !important;        
+    }
+    // .slick-prev, .slick-next:hover{
+    // }
+
+    .slick-prev:hover, .slick-prev:focus, .slick-next:hover, .slick-next:focus {
+        background-image: url(../icons/flecha1.svg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border: 0;
+        font-size: 0;
+        cursor: pointer;
+        top: 45%;
+        position: absolute;
+        // top: 0;
+    }
+    .slick-next{
+        background-image: url(../icons/flecha2.svg) !important;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        // transform: none !important;
+    }
+
+    .slick-prev:before, .slick-next:before {
+        content: none;
+    }
+
+    /*probando poner arriba*/
+
+    .slick-arrow,
+    .slick-arrow:hover,
+    .slick-arrow:focus {
+        top: -140px;
+        right: 253px;/*20*/
+    }
+    .slick-prev,
+    .slick-prev:focus,
+    .slick-prev:hover {
+        left: inherit;
+        right: 308px;/*75*/
+    }
+//     .slick-next {
+//         transform: rotate(-180deg);
+//     }
 }
 
 .Servicios{
@@ -495,6 +673,12 @@ main{
             box-shadow: 0px 4px 8px #D7AB00;
             border-radius: 20px;
         }
+        a:hover{
+            background-color: #0C7633;
+            color: $color-btn;
+            box-shadow: 0px 4px 8px #0C7633;
+            transition: 0.2s all;
+        }
     }
     
     .tarjeta-wrap:hover .tarjeta{
@@ -600,6 +784,12 @@ main{
                     font-weight: 800;
                     color: $color-title;
                     background-color: $color-btn;
+                }
+                a:hover{
+                    background-color: #96C11E;
+                    color: $color-btn;
+                    box-shadow: 0px 4px 8px #96C11E;
+                    transition: 0.2s all;
                 }
             }
         }
@@ -813,6 +1003,9 @@ main{
                 padding-top: 70px;
                 padding-left: 50px;
                 width: 100%;
+                text-align: center;
+                position: relative;
+                height: 100%;
                 // display: flex;
                 // flex-direction: column;
                 .img1{
@@ -822,9 +1015,15 @@ main{
                 .img2{
                     width: 258px;
                     float: right;
+                    position: relative;
+                    top: -90px;
+
                 }
                 .img3{
                     width: 200px;
+                    position: absolute;
+                    bottom: 0px;
+                    left: 60px;
                 }
             }
         }
@@ -833,6 +1032,8 @@ main{
         .cont{
             padding-top: 0;
         }
+        border-top: none;
+        border-bottom: none;
     }
 }
 
@@ -859,22 +1060,121 @@ main{
 .contact6,
 .contact7,
 .close,
+.btn-home a,
 #btn-right,
 #btn-left{
     cursor: pointer;
 }
 
-.container-slider{
+/* Efectos hover */
+
+/* Underline From Left */
+.hvr-underline-from-left {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    position: relative;
     overflow: hidden;
 }
-
-.slider-adm{
-    width: 300%;
-    display: flex;
-    margin-left: -100%;
+.hvr-underline-from-left:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 100%;
+    bottom: 0;
+    background: #0C7633;
+    height: 2px;
+    -webkit-transition-property: right;
+    transition-property: right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
 }
-.slider__section{
-    width: 100%;
+.hvr-underline-from-left:hover:before, .hvr-underline-from-left:focus:before, .hvr-underline-from-left:active:before {
+    right: 0;
 }
 
+/* Float */
+.hvr-float {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+.hvr-float:hover, .hvr-float:focus, .hvr-float:active {
+    -webkit-transform: translateY(-8px);
+    transform: translateY(-8px);
+}
+
+/* Back Pulse */
+@-webkit-keyframes hvr-back-pulse {
+    50% {
+      background-color: #0C7633;
+      color: #FCCA08;
+      box-shadow: 0px 4px 8px #0C7633;
+    }
+  }
+  @keyframes hvr-back-pulse {
+    50% {
+      background-color: #0C7633;
+      color: #FCCA08;
+      box-shadow: 0px 4px 8px #0C7633;
+    }
+  }
+  .hvr-back-pulse {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    -webkit-transition-property: color, background-color;
+    transition-property: color, background-color;
+  }
+  .hvr-back-pulse:hover, .hvr-back-pulse:focus, .hvr-back-pulse:active {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
+    animation-iteration-count: infinite;
+    background-color: #2098D1;
+    background-color: #2098d1;
+    color: #FCCA08;
+  }
+
+/* Fade */
+.hvr-fade {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: color, #96C11E;
+    transition-property: color, #96C11E;
+  }
+  .hvr-fade:hover, .hvr-fade:focus, .hvr-fade:active {
+    background-color: #96C11E;
+    color: white;
+  }
 
