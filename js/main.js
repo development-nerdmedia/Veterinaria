@@ -1,5 +1,21 @@
 AOS.init();
+/* MENU MOVIL */
+var menumovil = document.querySelector(".icon-menu");
+menumovil.addEventListener("click", menumovilact);
 
+function menumovilact(){
+  menumovil.classList.toggle("activo");
+    document.querySelector(".secmenumovil").classList.toggle("open");
+}
+
+/* close nav when clicking on a nav item */
+document.addEventListener("click", function(e){
+    if(e.target.closest(".close-menu-movil")){
+      menumovilact();
+    }
+});
+
+/* CONTACTO */
 var navToggler = document.querySelector(".contact");
 navToggler.addEventListener("click", toggleNav);
 
@@ -56,6 +72,14 @@ function toggleNav(){
 }
 
 var navToggler = document.querySelector(".contact7");
+navToggler.addEventListener("click", toggleNav);
+
+function toggleNav(){
+    navToggler.classList.toggle("activo");
+    document.querySelector(".contacto").classList.toggle("open");
+}
+
+var navToggler = document.querySelector(".contact8");
 navToggler.addEventListener("click", toggleNav);
 
 function toggleNav(){
