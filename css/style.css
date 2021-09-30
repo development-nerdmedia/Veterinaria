@@ -139,7 +139,8 @@ main {
           padding: 3px 15px;
           border-radius: 20px;
           background-color: white;
-          color: #494748; }
+          color: #494748;
+          font-weight: 800; }
         .home .cont .home-part-2 .btn-home a#btn1 {
           background-color: #0C7633;
           color: #fff; }
@@ -194,7 +195,7 @@ main {
     transform: translateX(-200%); } }
 
 .nosotros {
-  padding: 150px 0; }
+  padding: 150px 0 50px 0; }
   .nosotros .cont {
     display: flex; }
     .nosotros .cont .nosotros-part-1 {
@@ -228,7 +229,8 @@ main {
         font-size: 22px;
         color: #494748;
         padding-left: 20px;
-        line-height: 30px; }
+        line-height: 30px;
+        text-align: justify; }
 
 .equipo {
   padding: 100px 0;
@@ -240,48 +242,51 @@ main {
   .equipo .btn-equipo {
     float: right; }
   .equipo div#slider {
-    margin-top: 100px; }
+    margin-top: 50px; }
   .equipo #slider .slick-list {
     padding-top: 10px; }
-  .equipo #slider ul {
+  .equipo #slider .slider-equipo {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    padding-top: 10px;
-    padding: 0 10px; }
-    .equipo #slider ul li {
-      width: 48.6%;
-      /*48.6*/
-      min-height: 686px;
-      list-style: none;
-      background-color: white;
-      border-radius: 20px;
-      margin-bottom: 45px;
-      box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
-      min-height: 705.9px; }
-      .equipo #slider ul li .tarj-img {
+    padding-top: 10px; }
+    .equipo #slider .slider-equipo .card-equipo {
+      display: flex;
+      justify-content: center; }
+      .equipo #slider .slider-equipo .card-equipo .tarjeta-equipo {
+        width: 97.2%;
+        min-height: 686px;
+        list-style: none;
+        background-color: white;
+        border-radius: 20px;
+        margin-bottom: 45px;
+        box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4); }
+      .equipo #slider .slider-equipo .card-equipo .tarj-img {
         overflow: hidden; }
-        .equipo #slider ul li .tarj-img img {
+        .equipo #slider .slider-equipo .card-equipo .tarj-img img {
           width: 100%;
           border-radius: 20px 20px 0 0; }
-      .equipo #slider ul li .tarj-text .top {
+      .equipo #slider .slider-equipo .card-equipo .tarj-text .top {
         padding: 10px 20px;
         display: flex;
         align-items: center;
         border-bottom: 2px solid rgba(73, 71, 72, 0.2); }
-        .equipo #slider ul li .tarj-text .top div {
+        .equipo #slider .slider-equipo .card-equipo .tarj-text .top div {
           padding-left: 20px;
           color: #494748; }
-          .equipo #slider ul li .tarj-text .top div h3 {
+          .equipo #slider .slider-equipo .card-equipo .tarj-text .top div h3 {
             font-size: 25px;
             font-weight: 800;
             line-height: 25px;
             color: #494748; }
-      .equipo #slider ul li .tarj-text .bot {
+      .equipo #slider .slider-equipo .card-equipo .tarj-text .bot {
         padding: 10px 20px; }
-        .equipo #slider ul li .tarj-text .bot p {
+        .equipo #slider .slider-equipo .card-equipo .tarj-text .bot p {
           font-size: 22px;
-          line-height: 25px; }
+          line-height: 25px;
+          text-align: justify; }
+  .equipo #slider .slick-dotted.slick-slider {
+    margin-bottom: 0px !important; }
   .equipo #slider ul.slick-cloned li {
     box-shadow: none; }
   .equipo .slick-arrow {
@@ -317,7 +322,7 @@ main {
   .equipo .slick-arrow,
   .equipo .slick-arrow:hover,
   .equipo .slick-arrow:focus {
-    top: -140px;
+    top: -95px;
     right: 0px;
     /*20*/ }
   .equipo .slick-prev,
@@ -327,8 +332,11 @@ main {
     right: 55px;
     /*75*/ }
 
+.equipo .slider-equipo .slick-dots {
+  display: none !important; }
+
 .administracion {
-  padding: 100px 0;
+  padding: 0 0 !important;
   /*probando poner arriba*/ }
   .administracion .title h2 {
     font-size: 60px;
@@ -337,7 +345,7 @@ main {
   .administracion .btn-equipo {
     float: right; }
   .administracion .cont {
-    margin-top: 100px;
+    margin-top: 50px;
     height: 400px; }
     .administracion .cont .responsive {
       position: relative; }
@@ -402,7 +410,7 @@ main {
   .administracion .slick-arrow,
   .administracion .slick-arrow:hover,
   .administracion .slick-arrow:focus {
-    top: -140px;
+    top: -95px;
     right: 0px;
     /*20*/ }
   .administracion .slick-prev,
@@ -479,7 +487,8 @@ main {
     .Servicios .atras p {
       font-size: 25px;
       color: #494748;
-      line-height: 30px; }
+      line-height: 30px;
+      text-align: justify; }
     .Servicios .atras .boton-tarjeta-atras {
       display: flex;
       justify-content: center; }
@@ -643,11 +652,13 @@ main {
         text-decoration: none;
         color: #0C7633;
         font-size: 35px;
-        font-weight: 700; }
-    .secmenumovil ul li.btn-social-menu a {
-      margin: 0 10px; }
-      .secmenumovil ul li.btn-social-menu a img {
-        width: 33px; }
+        font-weight: 800; }
+    .secmenumovil ul li.btn-social-menu {
+      margin-top: 50px; }
+      .secmenumovil ul li.btn-social-menu a {
+        margin: 0 10px; }
+        .secmenumovil ul li.btn-social-menu a img {
+          width: 33px; }
 
 .secmenumovil.open {
   transform: translateX(0%);
@@ -723,7 +734,8 @@ main {
         background-color: rgba(255, 255, 255, 0.26);
         color: white;
         padding: 0.75em 1rem;
-        margin-bottom: 1.5rem; }
+        margin-bottom: 1.5rem;
+        border-radius: 10px; }
       .contacto .cont .contacto-part1 #fs-frm textarea {
         height: 50px; }
       .contacto .cont .contacto-part1 #fs-frm input:focus,
@@ -963,6 +975,8 @@ main {
 @media (max-width: 1440px) {
   .slider .scroll {
     padding: 5px 0; }
+  .slider1 .scroll {
+    padding: 5px 0; }
   .contacto {
     padding: 50px 0; }
   .contacto .cont .contacto-part1 textarea {
@@ -1075,10 +1089,6 @@ main {
   .Servicios .adelante img {
     width: 124px; }
   /*slider 2*/
-  .slider1 .scroll {
-    padding: 5px 0; }
-  .slider1 .scroll .text {
-    height: 40px; }
   /*footer*/
   .footer .bg-footer {
     height: 109px; }
@@ -1098,15 +1108,16 @@ main {
     align-items: center; }
   .contacto .cont .contacto-part1 {
     color: white;
-    width: 529px; }
+    width: 529px;
+    padding-top: 30px; }
   .contacto .cont .contacto-part2 {
     display: none; }
   .contacto .none-close {
     display: block;
     width: 1px;
-    transform: translate(60px, -100px); } }
+    transform: translate(60px, -120px); } }
 
-@media (max-width: 768px) {
+@media (max-width: 862px) {
   ul.menunormal {
     display: none; }
   ul.menumovil {
@@ -1116,7 +1127,7 @@ main {
       height: 30px;
       margin-right: 0; }
   .contacto .none-close {
-    transform: translate(10px, -100px); }
+    transform: translate(10px, -120px); }
   .nosotros .cont {
     display: flex;
     flex-direction: column-reverse; }
@@ -1169,4 +1180,6 @@ main {
     font-size: 18px; }
   .footer .bg-footer .container .contfoot h3 {
     font-size: 25px;
-    line-height: 30px; } }
+    line-height: 30px; }
+  .footer .maps {
+    height: 300px; } }
