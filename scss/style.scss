@@ -180,6 +180,7 @@ main{
                     border-radius: 20px;
                     background-color: white;
                     color: $color-text;
+                    font-weight: 800;
                 }
                 a#btn1{
                     background-color: $color-title;
@@ -255,7 +256,7 @@ main{
 }
 
 .nosotros{
-    padding: 150px 0;
+    padding: 150px 0 50px 0;
     .cont{
         display: flex;
         .nosotros-part-1{
@@ -298,6 +299,7 @@ main{
                 color: $color-text;
                 padding-left: 20px;
                 line-height: 30px;
+                text-align: justify;
             }
         }
     }
@@ -314,28 +316,31 @@ main{
         float: right;
     }
     div#slider{
-        margin-top: 100px;
+        margin-top: 50px;
     }   
 
     #slider{
         .slick-list {
             padding-top: 10px;
         }
-        ul{
+        .slider-equipo{
             display: flex;
             justify-content: space-between;
             flex-wrap: wrap;
             padding-top: 10px;
-            padding: 0 10px;
-            li{
-                width: 48.6%;/*48.6*/
-                min-height: 686px;
-                list-style: none;
-                background-color: white;
-                border-radius: 20px;
-                margin-bottom: 45px;
-                box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
-                min-height: 705.9px;                
+            .card-equipo{                          
+                display: flex;
+                justify-content: center;
+                .tarjeta-equipo{
+                    width: 97.2%;
+                    min-height: 686px;
+                    list-style: none;
+                    background-color: white;
+                    border-radius: 20px;
+                    margin-bottom: 45px;
+                    box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
+                    // min-height: 705.9px;
+                }      
                 .tarj-img{
                     overflow: hidden;  
                     img{
@@ -365,10 +370,15 @@ main{
                         p{
                             font-size: 22px;
                             line-height: 25px;
+                            text-align: justify;
                         }
                     }
                 }
-            }            
+            }
+                     
+        }
+        .slick-dotted.slick-slider {
+            margin-bottom: 0px !important; 
         }
         ul.slick-cloned{
             li{
@@ -425,7 +435,7 @@ main{
     .slick-arrow,
     .slick-arrow:hover,
     .slick-arrow:focus {
-        top: -140px;
+        top: -95px;
         right: 0px;/*20*/
     }
     .slick-prev,
@@ -436,8 +446,12 @@ main{
     }
 }
 
+.equipo .slider-equipo .slick-dots {
+    display: none !important;
+}
+
 .administracion{
-    padding: 100px 0;
+    padding: 0 0 !important;
     .title h2{
         font-size: 60px;
         color: $color-title;
@@ -447,7 +461,7 @@ main{
         float: right;
     }
     .cont{
-        margin-top: 100px;
+        margin-top: 50px;
         height: 400px;
         .responsive{
             position: relative;
@@ -557,7 +571,7 @@ main{
     .slick-arrow,
     .slick-arrow:hover,
     .slick-arrow:focus {
-        top: -140px;
+        top: -95px;
         right: 0px;/*20*/
     }
     .slick-prev,
@@ -669,6 +683,7 @@ main{
             font-size: 25px;
             color: $color-text;
             line-height: 30px;
+            text-align: justify;
         }
 
         .boton-tarjeta-atras{
@@ -878,10 +893,11 @@ main{
                 text-decoration: none;
                 color: #0C7633;
                 font-size: 35px;
-                font-weight: 700;                
+                font-weight: 800;                
             }            
         }
         li.btn-social-menu{
+            margin-top: 50px;
             a{
                 margin: 0 10px;
                 img{
@@ -973,7 +989,9 @@ main{
                 background-color: rgba(255, 255, 255, 0.26);
                 color: white;
                 padding: 0.75em 1rem;
-                margin-bottom: 1.5rem; }
+                margin-bottom: 1.5rem; 
+                border-radius: 10px;
+            }
                     
             #fs-frm textarea {
                 height: 50px; }
@@ -1267,6 +1285,10 @@ main{
             padding: 5px 0;
         }
     }
+
+    .slider1 .scroll {
+        padding: 5px 0;
+    }
     
     .contacto{
         padding: 50px 0;
@@ -1432,12 +1454,12 @@ main{
         width: 124px;
     }
     /*slider 2*/
-    .slider1 .scroll {
-        padding: 5px 0;
-    }
-    .slider1 .scroll .text {
-        height: 40px;
-    }
+    // .slider1 .scroll {
+    //     padding: 5px 0;
+    // }
+    // .slider1 .scroll .text {
+    //     height: 40px;
+    // }
     /*footer*/
     .footer .bg-footer {
         height: 109px;
@@ -1463,6 +1485,7 @@ main{
     .contacto .cont .contacto-part1 {
         color: white;
         width: 529px;
+        padding-top: 30px;
     }
     .contacto .cont .contacto-part2 {
         display: none;
@@ -1471,11 +1494,11 @@ main{
     .contacto .none-close{
         display: block;
         width: 1px;
-        transform: translate(60px,-100px);
+        transform: translate(60px,-120px);
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 862px) {
     ul.menunormal{
         display: none;
     }
@@ -1491,7 +1514,7 @@ main{
     }
 
     .contacto .none-close {
-        transform: translate(10px, -100px);
+        transform: translate(10px, -120px);
     }
 
     .nosotros .cont {
@@ -1571,5 +1594,9 @@ main{
         font-size: 25px;
         line-height: 30px;
     }
+    .footer .maps {
+        height: 300px;
+    }
+
 
 }
