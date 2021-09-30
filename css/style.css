@@ -169,15 +169,19 @@ main {
       animation-delay: -40s;
       display: flex; }
       .slider .scroll .text img {
-        width: 50px;
-        padding-right: 20px; }
+        width: 60px;
+        /*50*/
+        padding-right: 30px;
+        /*20*/ }
       .slider .scroll .text span {
         font-size: 35px;
         color: #494748; }
       .slider .scroll .text .cont {
-        padding-left: 50px; }
+        padding-left: 30px;
+        /*50*/ }
         .slider .scroll .text .cont img#email {
-          width: 60px; }
+          width: 65px;
+          /*60*/ }
     .slider .scroll .text:nth-child(2) {
       animation: animate2 40s linear infinite;
       animation-delay: -20s; }
@@ -254,7 +258,7 @@ main {
       display: flex;
       justify-content: center; }
       .equipo #slider .slider-equipo .card-equipo .tarjeta-equipo {
-        width: 97.2%;
+        width: 95%;
         min-height: 686px;
         list-style: none;
         background-color: white;
@@ -1127,7 +1131,7 @@ main {
       height: 30px;
       margin-right: 0; }
   .contacto .none-close {
-    transform: translate(10px, -120px); }
+    transform: translate(-65px, -120px); }
   .nosotros .cont {
     display: flex;
     flex-direction: column-reverse; }
@@ -1183,3 +1187,109 @@ main {
     line-height: 30px; }
   .footer .maps {
     height: 300px; } }
+
+@media (max-width: 768px) {
+  .home .cont {
+    padding-top: 30px;
+    flex-direction: column; }
+  .home .cont .home-part-1 .text {
+    transform: translateY(0px); }
+  .home .cont .home-part-1 {
+    width: auto;
+    text-align: center;
+    height: 50%;
+    z-index: 2; }
+  .home .cont .home-part-1 p {
+    width: auto; }
+  .home .cont .home-part-2 {
+    height: 100%;
+    padding-top: 30px;
+    width: 100%; }
+    .home .cont .home-part-2 #cuadro {
+      height: 105%;
+      background-position: 100% 0%;
+      transform: translateY(-25px);
+      display: flex;
+      text-align: center;
+      justify-content: center; }
+      .home .cont .home-part-2 #cuadro:before {
+        content: "";
+        display: block;
+        width: 99%;
+        position: absolute;
+        top: 0;
+        margin: 0 auto;
+        height: 20%;
+        background: linear-gradient(to bottom, #F3F9F5, transparent); }
+      .home .cont .home-part-2 #cuadro .home .cont .home-part-2 .btn-home {
+        position: absolute;
+        right: none;
+        bottom: none;
+        padding: 30px 15px; }
+  .home .cont .home-part-2 .btn-home {
+    position: absolute;
+    right: auto;
+    bottom: 5px;
+    padding: 30px 15px; }
+  .slider .scroll .text .cont {
+    padding-top: 0;
+    padding-left: 30px;
+    flex-direction: row; }
+  .equipo #slider .slider-equipo .card-equipo .tarjeta-equipo {
+    width: 93%;
+    /*97.2*/
+    min-height: 686px;
+    list-style: none;
+    background-color: white;
+    border-radius: 20px;
+    margin-bottom: 45px;
+    box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
+    min-height: 705.9px; }
+  .equipo #slider .slider-equipo .card-equipo .tarj-text .bot p {
+    font-size: 20px; }
+  .equipo div#slider {
+    margin-top: 20px; }
+  .equipo .slick-arrow, .equipo .slick-arrow:hover, .equipo .slick-arrow:focus {
+    top: -57px; }
+  .administracion .title h2 {
+    font-size: 45px;
+    width: 86%;
+    line-height: 50px; }
+  .administracion .cont {
+    margin-top: 50px;
+    height: auto; }
+  .administracion .slick-list.draggable {
+    padding-bottom: 10px; }
+  .administracion .slick-arrow, .administracion .slick-arrow:hover, .administracion .slick-arrow:focus {
+    top: -77px; }
+  .Servicios .tarjeta-wrap {
+    width: 45%; }
+  .Servicios .atras p {
+    font-size: 18px; }
+  .footer .bg-footer .container .contfoot {
+    display: flex;
+    justify-content: space-evenly;
+    height: 100%;
+    flex-direction: column;
+    align-items: center; }
+  .footer .bg-footer {
+    height: 200px; }
+  .footer .bg-footer .container .contfoot .text-footer {
+    text-align: left;
+    width: 80%;
+    text-align: center; }
+  .footer .creditos .cont-credito {
+    align-items: center; }
+  .footer .bg-footer .container .contfoot h3 {
+    font-size: 30px;
+    line-height: 35px; } }
+
+@media (max-width: 580px) {
+  .Servicios .tarjeta-wrap {
+    width: 80%; }
+  .Servicios .atras {
+    justify-content: space-around; } }
+
+@media (max-width: 454px) {
+  .contacto .none-close {
+    transform: translate(-65px, -132px); } }
