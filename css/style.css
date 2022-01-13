@@ -209,14 +209,15 @@ main {
       align-items: center; }
       .nosotros .cont .nosotros-part-1 .cont-imgs {
         padding-right: 50px;
-        height: 550px; }
+        height: 550px;
+        position: relative; }
         .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
           width: 324px;
           float: right; }
         .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
-          position: relative;
+          position: absolute;
           left: 10px;
-          top: -100px; }
+          top: 220px; }
         .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
           float: right;
           padding-top: 20px; }
@@ -591,8 +592,7 @@ main {
       .footer .bg-footer .container .contfoot .text-footer {
         display: flex;
         justify-content: center;
-        align-items: center;
-        text-align: center; }
+        align-items: center; }
       .footer .bg-footer .container .contfoot .btnfoot {
         display: flex;
         justify-content: center;
@@ -825,7 +825,7 @@ main {
         margin-left: auto;
         margin-right: auto; }
       .contacto .cont .contacto-part1 textarea {
-        height: 180px !important; }
+        height: 130px !important; }
     .contacto .cont .contacto-part2 {
       width: 50%; }
       .contacto .cont .contacto-part2 .contacto-imgs {
@@ -846,7 +846,7 @@ main {
         .contacto .cont .contacto-part2 .contacto-imgs .img3 {
           width: 200px;
           position: absolute;
-          bottom: 0px;
+          bottom: 50px;
           left: 60px; }
   .contacto .slider {
     border-top: none;
@@ -1015,13 +1015,13 @@ main {
     float: right; }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
     position: relative;
-    left: 10px;
+    left: 50px;
     top: -100px;
-    width: 260px; }
+    width: 230px; }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
     float: right;
     padding-top: 20px;
-    width: 200px; } }
+    width: 180px; } }
 
 @media (max-width: 1290px) and (min-width: 1025px) and (max-width: 1224px) {
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
@@ -1029,13 +1029,18 @@ main {
     float: right; }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
     position: relative;
-    left: 10px;
-    top: -100px;
-    width: 260px; }
+    top: -100px; }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
     float: right;
-    padding-top: 20px;
-    width: 200px; } }
+    padding-top: 20px; } }
+
+@media (max-width: 1158px) {
+  .footer .bg-footer .container .contfoot h3 {
+    line-height: 40px; } }
+
+@media (max-width: 1105px) {
+  .Servicios .tarjeta-wrap {
+    width: 46%; } }
 
 @media (max-width: 1024px) {
   .container {
@@ -1214,6 +1219,8 @@ main {
     height: 300px; } }
 
 @media (max-width: 768px) {
+  .Servicios .atras a {
+    padding: 5px 35px; }
   .home .cont {
     padding-top: 30px;
     flex-direction: column; }
@@ -1305,7 +1312,7 @@ main {
     height: 200px; }
   .footer .bg-footer .container .contfoot .text-footer {
     text-align: left;
-    width: 80%;
+    width: 100%;
     text-align: center; }
   .footer .creditos .cont-credito {
     align-items: center; }
@@ -1313,9 +1320,24 @@ main {
     font-size: 30px;
     line-height: 35px; } }
 
+@media (max-width: 668px) {
+  .Servicios .tarjeta-wrap {
+    width: 100%; }
+  .Servicios .atras {
+    justify-content: space-around; } }
+
+@media (max-width: 650px) {
+  .administracion .title h2 {
+    width: 300px;
+    font-size: 40px; }
+  .administracion .slick-arrow,
+  .administracion .slick-arrow:hover,
+  .administracion .slick-arrow:focus {
+    top: -98px; } }
+
 @media (max-width: 580px) {
   .Servicios .tarjeta-wrap {
-    width: 80%; }
+    width: 100%; }
   .Servicios .atras {
     justify-content: space-around; }
   .contacto .cont .contacto-part1 {
@@ -1326,10 +1348,21 @@ main {
   .contacto .cont .contacto-part1 h1 {
     font-size: 45px; }
   .contacto .cont .contacto-part1 p {
-    font-size: 22px; } }
+    font-size: 22px; }
+  .equipo .title h2 {
+    font-size: 40px;
+    width: 250px;
+    line-height: 45px; } }
 
 @media (max-width: 454px) {
   /*añadidos*/
+  .administracion .title h2 {
+    font-size: 35px;
+    line-height: 40px; }
+  .administracion .slick-arrow,
+  .administracion .slick-arrow:hover,
+  .administracion .slick-arrow:focus {
+    top: -89px; }
   .home .cont .home-part-1 h1 {
     font-size: 38px;
     line-height: 38.57px; }

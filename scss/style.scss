@@ -262,15 +262,16 @@ main {
       .cont-imgs {
         padding-right: 50px;
         height: 550px;
+        position: relative;
         img.img1 {
           width: 324px;
           float: right;
         }
 
         img.img2 {
-          position: relative;
+          position: absolute;
           left: 10px;
-          top: -100px;
+          top: 220px;
         }
 
         img.img3 {
@@ -688,6 +689,7 @@ main {
       color: $color-text;
       line-height: 30px;
       text-align: justify;
+      z-index: 2;
     }
 
     .boton-tarjeta-atras {
@@ -800,7 +802,7 @@ main {
           display: flex;
           justify-content: center;
           align-items: center;
-          text-align: center;
+          //   text-align: center;
         }
         .btnfoot {
           display: flex;
@@ -1101,7 +1103,7 @@ main {
       }
 
       textarea {
-        height: 180px !important;
+        height: 130px !important;
       }
     }
     .contacto-part2 {
@@ -1128,7 +1130,7 @@ main {
         .img3 {
           width: 200px;
           position: absolute;
-          bottom: 0px;
+          bottom: 50px;
           left: 60px;
         }
       }
@@ -1338,14 +1340,14 @@ main {
   }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
     position: relative;
-    left: 10px;
+    left: 50px;
     top: -100px;
-    width: 260px;
+    width: 230px;
   }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
     float: right;
     padding-top: 20px;
-    width: 200px;
+    width: 180px;
   }
 
   @media (max-width: 1224px) {
@@ -1355,15 +1357,27 @@ main {
     }
     .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
       position: relative;
-      left: 10px;
+      //   left: 10px;
       top: -100px;
-      width: 260px;
+      //   width: 260px;
     }
     .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
       float: right;
       padding-top: 20px;
-      width: 200px;
+      //   width: 200px;
     }
+  }
+}
+
+@media (max-width: 1158px) {
+  .footer .bg-footer .container .contfoot h3 {
+    line-height: 40px;
+  }
+}
+
+@media (max-width: 1105px) {
+  .Servicios .tarjeta-wrap {
+    width: 46%;
   }
 }
 
@@ -1630,6 +1644,9 @@ main {
 }
 
 @media (max-width: 768px) {
+  .Servicios .atras a {
+    padding: 5px 35px;
+  }
   .home .cont {
     padding-top: 30px;
     flex-direction: column;
@@ -1747,7 +1764,7 @@ main {
   }
   .footer .bg-footer .container .contfoot .text-footer {
     text-align: left;
-    width: 80%;
+    width: 100%;
     text-align: center;
   }
   .footer .creditos .cont-credito {
@@ -1759,9 +1776,30 @@ main {
   }
 }
 
+@media (max-width: 668px) {
+  .Servicios .tarjeta-wrap {
+    width: 100%;
+  }
+  .Servicios .atras {
+    justify-content: space-around;
+  }
+}
+
+@media (max-width: 650px) {
+  .administracion .title h2 {
+    width: 300px;
+    font-size: 40px;
+  }
+  .administracion .slick-arrow,
+  .administracion .slick-arrow:hover,
+  .administracion .slick-arrow:focus {
+    top: -98px;
+  }
+}
+
 @media (max-width: 580px) {
   .Servicios .tarjeta-wrap {
-    width: 80%;
+    width: 100%;
   }
   .Servicios .atras {
     justify-content: space-around;
@@ -1778,13 +1816,26 @@ main {
   .contacto .cont .contacto-part1 p {
     font-size: 22px;
   }
+  .equipo .title h2 {
+    font-size: 40px;
+    width: 250px;
+    line-height: 45px;
+  }
 }
 
 @media (max-width: 454px) {
-  //   .contacto .none-close {
-  //     transform: translate(-65px, -132px);
-  //   }
   /*añadidos*/
+  .administracion .title h2 {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .administracion .slick-arrow,
+  .administracion .slick-arrow:hover,
+  .administracion .slick-arrow:focus {
+    top: -89px;
+  }
+
   .home .cont .home-part-1 h1 {
     font-size: 38px;
     line-height: 38.57px;
