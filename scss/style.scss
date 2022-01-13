@@ -1369,6 +1369,20 @@ main {
   }
 }
 
+@media (max-width: 1091px) {
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
+    width: 260px;
+    float: right;
+  }
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
+    width: 207px;
+  }
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
+    float: right;
+    width: 160px;
+  }
+}
+
 @media (max-width: 1158px) {
   .footer .bg-footer .container .contfoot h3 {
     line-height: 40px;
@@ -1825,8 +1839,12 @@ main {
 
 @media (max-width: 454px) {
   /*añadidos*/
+  .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
+    left: -62px;
+  }
+
   .administracion .title h2 {
-    font-size: 35px;
+    font-size: 32px;
     line-height: 40px;
   }
 
