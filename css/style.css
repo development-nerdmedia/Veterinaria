@@ -504,7 +504,8 @@ main {
       font-size: 25px;
       color: #494748;
       line-height: 30px;
-      text-align: justify; }
+      text-align: justify;
+      z-index: 2; }
     .Servicios .atras .boton-tarjeta-atras {
       display: flex;
       justify-content: center; }
