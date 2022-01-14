@@ -1316,6 +1316,65 @@ main {
   color: white;
 }
 
+// .thanksPage {
+//   width: 100%;
+//   height: calc(100vh - 90px);
+//   background-color: $color-title;
+//   .center {
+//     display: flex;
+//     align-items: center;
+//     .contenido {
+//       .thanksPage-part1 {
+//         h1 {
+//           font-size: 60px;
+//           font-weight: 700;
+//           color: #fff;
+//           line-height: 60px;
+//         }
+//         p {
+//           font-size: 22px;
+//           line-height: 22px;
+//           color: #fff;
+//         }
+//       }
+//     }
+//   }
+// }
+
+.containerThanks {
+  width: 85%;
+  max-width: 1111px;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.thanks1 {
+  display: flex;
+  align-items: center;
+  h1 {
+    font-size: 60px;
+    line-height: 60px;
+    font-weight: 800;
+    // width: 650px;
+  }
+  p {
+    font-size: 22px;
+    line-height: 22px;
+    font-weight: 500;
+  }
+  a {
+    font-size: 20px;
+    line-height: 20px;
+    text-decoration: none;
+    padding: 8px 25px;
+    border-radius: 20px;
+    font-weight: 800;
+    color: #0c7633;
+    background-color: #fcca08;
+    box-shadow: 0px 4px 8px #d7ab00;
+  }
+}
+
 @media (max-width: 1880px) {
   .contacto {
     padding: 50px 0;
@@ -1862,6 +1921,33 @@ main {
     width: 250px;
     line-height: 45px;
   }
+
+  @media (max-width: 570px) {
+    .footer .creditos {
+      height: auto;
+    }
+    .footer .creditos {
+      padding: 10px 0;
+    }
+    .footer .creditos .cont-credito {
+      flex-direction: column;
+    }
+    .footer .creditos .cont-credito .info-nerd {
+      padding-top: 5px;
+    }
+  }
+
+  @media (max-width: 425px) {
+    .footer .creditos .cont-credito h3 {
+      font-size: 10px;
+    }
+    .footer .creditos .cont-credito .info-nerd {
+      transform: scale(0.8);
+    }
+    .footer .creditos .cont-credito .info-nerd {
+      padding-top: 5px;
+    }
+  }
 }
 
 @media (max-width: 454px) {
@@ -1917,7 +2003,7 @@ main {
     display: none;
   }
   @media (max-height: 730px) {
-    .contacto .cont .contacto-part1 p {
+    .contacto .cont .contacto-part1 p.parrafo {
       margin-bottom: 21px;
     }
   }
@@ -1930,7 +2016,7 @@ main {
     }
   }
   @media (max-height: 659px) {
-    .contacto .cont .contacto-part1 p {
+    .contacto .cont .contacto-part1 p.parrafo {
       display: none;
     }
     .contacto .cont .contacto-part2 .contacto-imgs .img2 {
