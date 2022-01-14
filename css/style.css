@@ -865,6 +865,8 @@ main {
           position: absolute;
           bottom: 50px;
           left: 60px; }
+  .contacto .contThank h1 {
+    width: 650px; }
   .contacto .slider {
     border-top: none;
     border-bottom: none; }
@@ -1081,6 +1083,10 @@ main {
     float: right;
     padding-top: 20px; } }
 
+@media (max-width: 1240px) {
+  .contacto .contThank h1 {
+    width: auto; } }
+
 @media (max-width: 1091px) {
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
     width: 260px;
@@ -1197,6 +1203,11 @@ main {
     display: flex;
     justify-content: center;
     align-items: center; }
+  .contacto .contThank {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100% - 90px); }
   .contacto .cont .contacto-part1 {
     color: white;
     width: 529px;
@@ -1206,7 +1217,9 @@ main {
   .contacto .none-close {
     display: block;
     width: 1px;
-    transform: translate(60px, -120px); } }
+    transform: translate(60px, -120px); }
+  .contacto .close-thank {
+    transform: translate(60px, -204px); } }
 
 @media (max-width: 862px) {
   ul.menunormal {
@@ -1219,6 +1232,8 @@ main {
       margin-right: 0; }
   .contacto .none-close {
     transform: translate(-65px, -120px); }
+  .contacto .close-thank {
+    transform: translate(-65px, -204px); }
   .nosotros .cont {
     display: flex;
     flex-direction: column-reverse; }
