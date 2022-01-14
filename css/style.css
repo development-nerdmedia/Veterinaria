@@ -326,7 +326,8 @@ main {
     border-radius: 20px;
     position: absolute;
     width: 47px;
-    height: 47px; }
+    height: 47px;
+    opacity: 0.7; }
   .equipo .slick-prev:hover,
   .equipo .slick-prev:focus,
   .equipo .slick-next:hover,
@@ -338,7 +339,8 @@ main {
     font-size: 0;
     cursor: pointer;
     top: 45%;
-    position: absolute; }
+    position: absolute;
+    opacity: 1; }
   .equipo .slick-next {
     background-image: url(../icons/flecha2.svg) !important;
     background-repeat: no-repeat;
@@ -356,7 +358,7 @@ main {
   .equipo .slick-prev:focus,
   .equipo .slick-prev:hover {
     left: inherit;
-    right: 55px;
+    right: 63px;
     /*75*/ }
 
 .equipo .slider-equipo .slick-dots {
@@ -390,13 +392,17 @@ main {
             padding: 11px 20px;
             font-weight: 800;
             line-height: 30px;
-            color: #494748; }
+            color: #494748;
+            background-color: #fff;
+            border-radius: 0 0 20px 20px; }
             .administracion .cont .responsive .card .tarjeta-adm .adm-text h3 {
               font-size: 30px; }
             .administracion .cont .responsive .card .tarjeta-adm .adm-text p {
               font-size: 24px; }
       .administracion .cont .responsive .slick-dots {
         display: none !important; }
+  .administracion button.slick-arrow {
+    border-radius: 50% !important; }
   .administracion .slick-dotted.slick-slider {
     height: 100% !important; }
   .administracion .slick-list.draggable {
@@ -419,7 +425,8 @@ main {
     border-radius: 20px;
     position: absolute;
     width: 47px;
-    height: 47px; }
+    height: 47px;
+    opacity: 0.7; }
   .administracion .slick-prev:hover,
   .administracion .slick-prev:focus,
   .administracion .slick-next:hover,
@@ -431,7 +438,9 @@ main {
     font-size: 0;
     cursor: pointer;
     top: 45%;
-    position: absolute; }
+    position: absolute;
+    transition: 0.2s;
+    opacity: 1; }
   .administracion .slick-next {
     background-image: url(../icons/flecha2.svg) !important;
     background-repeat: no-repeat;
@@ -449,7 +458,7 @@ main {
   .administracion .slick-prev:focus,
   .administracion .slick-prev:hover {
     left: inherit;
-    right: 55px;
+    right: 63px;
     /*75*/ }
 
 .Servicios {
@@ -626,6 +635,7 @@ main {
         background-color: #fcca08; }
       .footer .bg-footer .container .contfoot a:hover {
         background-color: #96c11e;
+        color: #fff;
         box-shadow: 0px 4px 8px #96c11e;
         transition: 0.2s all; }
 
@@ -804,6 +814,8 @@ main {
         width: 150px;
         cursor: pointer;
         color: white;
+        background-color: #96c11e;
+        box-shadow: 0px 4px 8px #96c11e;
         -webkit-appearance: button;
         -moz-appearance: button;
         appearance: button;
