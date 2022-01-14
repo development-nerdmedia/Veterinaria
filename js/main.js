@@ -1,5 +1,9 @@
 AOS.init();
 
+if (navigator.userAgent.indexOf('Mac OS X') != -1) {
+  $("body").addClass("mac");
+}
+
 /* close nav when clicking on a nav item */
 document.addEventListener("click", function (e) {
   if (e.target.closest(".contact") ||
