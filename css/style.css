@@ -15,6 +15,9 @@ body {
 main {
   padding-top: 98px; }
 
+.scrollhidden {
+  overflow: hidden; }
+
 .container {
   width: 85%;
   max-width: 1111px;
@@ -465,7 +468,9 @@ main {
     height: 280px;
     background: white;
     position: relative;
+    -webkit-transform-style: preserve-3d;
     transform-style: preserve-3d;
+    -webkit-transition: 0.7s ease;
     transition: 0.7s ease;
     box-shadow: 0px 4px 8px rgba(73, 71, 72, 0.4);
     border-radius: 20px; }
@@ -771,7 +776,6 @@ main {
         cursor: pointer;
         color: #0c7633;
         background-color: #fcca08;
-        border: 2px solid #bb9d65;
         font-weight: 800;
         font-size: 20px;
         height: 50px;
