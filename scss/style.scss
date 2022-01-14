@@ -22,7 +22,7 @@ body {
 }
 
 main {
-  padding-top: 98px;
+  padding-top: 94px;
 }
 
 .mac .contacto .cont .contacto-part2 .contacto-imgs .img3 {
@@ -115,7 +115,7 @@ main {
 }
 
 .home {
-  height: calc(100vh - 98px);
+  height: calc(100vh - 94px);
   position: relative;
   overflow: hidden;
   .cont {
@@ -183,8 +183,9 @@ main {
         height: 654px;
         float: right;
         position: relative;
-        border-radius: 0 0 20px 20px;
+        border-radius: 0 0 24px 24px;
         transform: translateY(-100px);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
       }
       .btn-home {
         position: absolute;
@@ -404,17 +405,16 @@ main {
       }
     }
   }
-  .slick-arrow {
-    background-image: url(../icons/flecha1.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    font-size: 0;
-    width: 2.5vw;
-    cursor: pointer;
-    height: 2.5vw;
-    top: 45%;
-  }
+  // .slick-arrow {
+  //   background-size: 100%;
+  //   background-repeat: no-repeat;
+  //   border: 0;
+  //   font-size: 0;
+  //   width: 2.5vw;
+  //   cursor: pointer;
+  //   height: 2.5vw;
+  //   top: 45%;
+  // }
 
   .slick-prev,
   .slick-next {
@@ -423,7 +423,6 @@ main {
     position: absolute;
     width: 47px;
     height: 47px;
-    opacity: 0.7;
     // top: 0 !important;
   }
   // .slick-prev, .slick-next:hover{
@@ -431,9 +430,7 @@ main {
 
   .slick-prev:hover,
   .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
-    background-image: url(../icons/flecha1.svg);
+  .slick-next:hover {
     background-repeat: no-repeat;
     background-size: 100%;
     border: 0;
@@ -441,14 +438,27 @@ main {
     cursor: pointer;
     top: 45%;
     position: absolute;
-    opacity: 1;
+    // transition: 0.1s;
     // top: 0;
   }
   .slick-next {
     background-image: url(../icons/flecha2.svg) !important;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat !important;
     background-size: 100%;
     // transform: none !important;
+  }
+
+  .slick-next:hover {
+    background-image: url(../icons/flechahover.svg) !important;
+  }
+
+  .slick-prev {
+    background-image: url(../icons/flecha1.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+  .slick-prev:hover {
+    background-image: url(../icons/flechahover2.svg) !important;
   }
 
   .slick-prev:before,
@@ -551,17 +561,17 @@ main {
     height: 100% !important;
   }
 
-  .slick-arrow {
-    background-image: url(../icons/flecha1.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    border: 0;
-    font-size: 0;
-    width: 2.5vw;
-    cursor: pointer;
-    height: 2.5vw;
-    top: 45%;
-  }
+  // .slick-arrow {
+  //   background-image: url(../icons/flecha1.svg);
+  //   background-size: 100%;
+  //   background-repeat: no-repeat;
+  //   border: 0;
+  //   font-size: 0;
+  //   width: 2.5vw;
+  //   cursor: pointer;
+  //   height: 2.5vw;
+  //   top: 45%;
+  // }
 
   .slick-prev,
   .slick-next {
@@ -570,38 +580,52 @@ main {
     position: absolute;
     width: 47px;
     height: 47px;
-    opacity: 0.7;
     // top: 0 !important;
   }
   // .slick-prev, .slick-next:hover{
   // }
 
-  .slick-prev:hover,
-  .slick-prev:focus,
-  .slick-next:hover,
-  .slick-next:focus {
-    background-image: url(../icons/flecha1.svg);
-    background-repeat: no-repeat;
-    background-size: 100%;
-    border: 0;
-    font-size: 0;
-    cursor: pointer;
-    top: 45%;
-    position: absolute;
-    // top: 0;
-    transition: 0.2s;
-    opacity: 1;
-  }
-  .slick-next {
-    background-image: url(../icons/flecha2.svg) !important;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    // transform: none !important;
-  }
+  // .slick-prev:hover,
+  // .slick-prev:focus,
+  // .slick-next:hover,
+  // .slick-next:focus {
+  //   background-repeat: no-repeat;
+  //   background-size: 100%;
+  //   border: 0;
+  //   font-size: 0;
+  //   cursor: pointer;
+  //   top: 45%;
+  //   position: absolute;
+  //   // top: 0;
+  //   transition: 0.2s;
+  //   opacity: 1;
+  // }
 
   .slick-prev:before,
   .slick-next:before {
     content: none;
+  }
+  .slick-next {
+    background-image: url(../icons/flecha2.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100%;
+    // transform: none !important;
+  }
+  .slick-next:hover {
+    background-image: url(../icons/flechahover.svg) !important;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  .slick-prev {
+    background-image: url(../icons/flecha1.svg) !important;
+    background-size: 100%;
+    background-repeat: no-repeat !important;
+    background-size: 100%;
+  }
+  .slick-prev:hover {
+    background-image: url(../icons/flechahover2.svg) !important;
+    background-repeat: no-repeat;
+    background-size: 100%;
   }
 
   /*probando poner arriba*/
@@ -2044,6 +2068,13 @@ main {
   .contacto .slider {
     display: none;
   }
+  .slider .scroll {
+    padding: 0px 0;
+  }
+  .slider1 .scroll {
+    padding: 0px 0;
+  }
+
   @media (max-height: 730px) {
     .contacto .cont .contacto-part1 p.parrafo {
       margin-bottom: 21px;
