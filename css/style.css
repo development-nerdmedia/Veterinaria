@@ -89,7 +89,8 @@ main {
 
 .home {
   height: calc(100vh - 98px);
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
   .home .cont {
     display: flex;
     align-items: center;
@@ -142,7 +143,7 @@ main {
         height: 654px;
         float: right;
         position: relative;
-        border-radius: 20px;
+        border-radius: 0 0 20px 20px;
         transform: translateY(-100px); }
       .home .cont .home-part-2 .btn-home {
         position: absolute;
@@ -1243,7 +1244,8 @@ main {
       height: 30px;
       margin-right: 0; }
   .contacto .none-close {
-    transform: translate(-65px, -120px); }
+    transform: translate(-51px, -120px);
+    /*-65 -120*/ }
   .contacto .close-thank {
     transform: translate(-65px, -204px); }
   .nosotros .cont {
@@ -1536,3 +1538,13 @@ main {
   .tarjeta .adelante .newText b {
     font-weight: 900;
     font-size: 16px; } }
+
+.down_arrow {
+  top: 0;
+  position: relative;
+  -webkit-transition: top 0.5s ease-out;
+  -moz-transition: top 0.5s ease-out;
+  -o-transition: top 0.5s ease-out; }
+
+.down_arrow:hover {
+  top: -10px; }
