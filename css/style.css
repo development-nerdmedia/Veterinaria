@@ -331,7 +331,7 @@ main {
     top: 45%;
     position: absolute; }
   .equipo .slick-next {
-    background-image: url(../icons/flecha2.png) !important;
+    background-image: url(../icons/flecha2.svg) !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important; }
   .equipo .slick-next:hover {
@@ -339,7 +339,7 @@ main {
     background-repeat: no-repeat !important;
     background-size: 100%; }
   .equipo .slick-prev {
-    background-image: url(../icons/flecha1.png) !important;
+    background-image: url(../icons/flecha1.svg) !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important; }
   .equipo .slick-prev:hover {
