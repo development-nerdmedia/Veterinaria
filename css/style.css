@@ -421,7 +421,7 @@ main {
   .administracion .slick-next:before {
     content: none; }
   .administracion .slick-next {
-    background-image: url(../icons/flecha2.png) !important;
+    background-image: url(../icons/flecha2.svg) !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important; }
   .administracion .slick-next:hover {
@@ -429,7 +429,7 @@ main {
     background-size: 100% !important;
     background-repeat: no-repeat !important; }
   .administracion .slick-prev {
-    background-image: url(../icons/flecha1.png) !important;
+    background-image: url(../icons/flecha1.svg) !important;
     background-size: 100%;
     background-repeat: no-repeat !important;
     background-size: 100% !important; }
