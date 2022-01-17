@@ -2193,10 +2193,56 @@ main {
 @media (max-width: 1366px) {
   @media (min-height: 930px) {
     .home {
-      height: 700px;
+      height: 790px; /*700*/
     }
     .home .cont .home-part-2 #cuadro {
-      transform: translateY(-20px);
+      transform: translateY(-54px); /*20*/
+    }
+
+    /**/
+    .tarjeta-wrap:hover .tarjeta {
+      -webkit-transform: rotateY(0);
+      transform: rotateY(0);
+    }
+
+    .tarjeta .adelante .contentImg {
+      display: flex;
+    }
+
+    .tarjeta .adelante .contentImg img {
+      width: 41px;
+    }
+
+    .tarjeta .adelante .tittle1 {
+      display: none;
+    }
+
+    .tarjeta .adelante .newText {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    .tarjeta .adelante .contentImg .tittle2 {
+      display: block;
+      padding-left: 15px;
+    }
+
+    .tarjeta .adelante .newText {
+      display: block;
+    }
+    .Servicios .tarjeta {
+      height: 170px;
+    }
+    .Servicios .adelante {
+      align-items: flex-start;
+      padding: 24px;
+    }
+    .Servicios .adelante p {
+      margin-top: 12px;
+    }
+    .tarjeta .adelante .newText b {
+      font-weight: 900;
+      font-size: 16px;
     }
   }
 }
