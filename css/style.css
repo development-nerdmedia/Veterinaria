@@ -331,17 +331,21 @@ main {
     top: 45%;
     position: absolute; }
   .equipo .slick-next {
-    background-image: url(../icons/flecha2.svg) !important;
+    background-image: url(../icons/flecha2.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important; }
+  .equipo .slick-next:hover {
+    background-image: url(../icons/flechahover.svg) !important;
     background-repeat: no-repeat !important;
     background-size: 100%; }
-  .equipo .slick-next:hover {
-    background-image: url(../icons/flechahover.svg) !important; }
   .equipo .slick-prev {
-    background-image: url(../icons/flecha1.svg) !important;
-    background-repeat: no-repeat;
-    background-size: 100%; }
+    background-image: url(../icons/flecha1.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important; }
   .equipo .slick-prev:hover {
-    background-image: url(../icons/flechahover2.svg) !important; }
+    background-image: url(../icons/flechahover2.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100%; }
   .equipo .slick-prev:before,
   .equipo .slick-next:before {
     content: none; }
@@ -417,18 +421,18 @@ main {
   .administracion .slick-next:before {
     content: none; }
   .administracion .slick-next {
-    background-image: url(../icons/flecha2.svg) !important;
+    background-image: url(../icons/flecha2.png) !important;
     background-repeat: no-repeat !important;
-    background-size: 100%; }
+    background-size: 100% !important; }
   .administracion .slick-next:hover {
     background-image: url(../icons/flechahover.svg) !important;
-    background-size: 100%;
-    background-repeat: no-repeat; }
+    background-size: 100% !important;
+    background-repeat: no-repeat !important; }
   .administracion .slick-prev {
-    background-image: url(../icons/flecha1.svg) !important;
+    background-image: url(../icons/flecha1.png) !important;
     background-size: 100%;
     background-repeat: no-repeat !important;
-    background-size: 100%; }
+    background-size: 100% !important; }
   .administracion .slick-prev:hover {
     background-image: url(../icons/flechahover2.svg) !important;
     background-repeat: no-repeat;
@@ -730,6 +734,12 @@ main {
         font-size: 22px;
         margin-bottom: 40px;
         line-height: 25px; }
+      .contacto .cont .contacto-part1 input[type="number"]::-webkit-inner-spin-button,
+      .contacto .cont .contacto-part1 input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0; }
+      .contacto .cont .contacto-part1 input[type="number"] {
+        -moz-appearance: textfield; }
       .contacto .cont .contacto-part1 #fs-frm select,
       .contacto .cont .contacto-part1 #fs-frm input,
       .contacto .cont .contacto-part1 #fs-frm fieldset,

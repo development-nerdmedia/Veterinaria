@@ -443,23 +443,27 @@ main {
     // top: 0;
   }
   .slick-next {
-    background-image: url(../icons/flecha2.svg) !important;
+    background-image: url(../icons/flecha2.png) !important;
     background-repeat: no-repeat !important;
-    background-size: 100%;
+    background-size: 100% !important;
     // transform: none !important;
   }
 
   .slick-next:hover {
     background-image: url(../icons/flechahover.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100%;
   }
 
   .slick-prev {
-    background-image: url(../icons/flecha1.svg) !important;
-    background-repeat: no-repeat;
-    background-size: 100%;
+    background-image: url(../icons/flecha1.png) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100% !important;
   }
   .slick-prev:hover {
     background-image: url(../icons/flechahover2.svg) !important;
+    background-repeat: no-repeat !important;
+    background-size: 100%;
   }
 
   .slick-prev:before,
@@ -607,21 +611,21 @@ main {
     content: none;
   }
   .slick-next {
-    background-image: url(../icons/flecha2.svg) !important;
+    background-image: url(../icons/flecha2.png) !important;
     background-repeat: no-repeat !important;
-    background-size: 100%;
+    background-size: 100% !important;
     // transform: none !important;
   }
   .slick-next:hover {
     background-image: url(../icons/flechahover.svg) !important;
-    background-size: 100%;
-    background-repeat: no-repeat;
+    background-size: 100% !important;
+    background-repeat: no-repeat !important;
   }
   .slick-prev {
-    background-image: url(../icons/flecha1.svg) !important;
+    background-image: url(../icons/flecha1.png) !important;
     background-size: 100%;
     background-repeat: no-repeat !important;
-    background-size: 100%;
+    background-size: 100% !important;
   }
   .slick-prev:hover {
     background-image: url(../icons/flechahover2.svg) !important;
@@ -1016,6 +1020,16 @@ main {
         line-height: 25px;
       }
       /* reset */
+      input[type="number"]::-webkit-inner-spin-button,
+      input[type="number"]::-webkit-outer-spin-button {
+        -webkit-appearance: none;
+        margin: 0;
+      }
+
+      input[type="number"] {
+        -moz-appearance: textfield;
+      }
+
       #fs-frm select,
       #fs-frm input,
       #fs-frm fieldset,
