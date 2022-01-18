@@ -126,79 +126,53 @@ function cambiar(imgchange) {
   document.getElementById('cuadro').style.backgroundImage = imgchange;
   document.getElementById('title1').style.display = 'block';
   document.getElementById('title2').style.display = 'none';
-  document.getElementById('title3').style.display = 'none';
-  document.getElementById('title4').style.display = 'none';
 }
 
 function cambiartexto() {
   document.getElementById('title1').style.display = 'block';
   document.getElementById('title2').style.display = 'none';
-  document.getElementById('title3').style.display = 'none';
-  document.getElementById('title4').style.display = 'none';
 }
 
 function cambiartexto2() {
   document.getElementById('title1').style.display = 'none';
   document.getElementById('title2').style.display = 'block';
-  document.getElementById('title3').style.display = 'none';
-  document.getElementById('title4').style.display = 'none';
 }
 
 function cambiartexto3() {
   document.getElementById('title1').style.display = 'none';
   document.getElementById('title2').style.display = 'none';
-  document.getElementById('title3').style.display = 'block';
-  document.getElementById('title4').style.display = 'none';
 }
 
 function cambiartexto4() {
   document.getElementById('title1').style.display = 'none';
   document.getElementById('title2').style.display = 'none';
-  document.getElementById('title3').style.display = 'none';
-  document.getElementById('title4').style.display = 'block';
 }
 
 function cambiarcolor(col, colnn) {
   document.getElementById('btn1').style.backgroundColor = col;
   document.getElementById('btn2').style.backgroundColor = colnn;
-  document.getElementById('btn3').style.backgroundColor = colnn;
-  document.getElementById('btn4').style.backgroundColor = colnn;
   document.getElementById('btn1').style.color = '#FFF';
   document.getElementById('btn2').style.color = '#494748';
-  document.getElementById('btn3').style.color = '#494748';
-  document.getElementById('btn4').style.color = '#494748';
 }
 
 function cambiarcolor2(col, colnn) {
   document.getElementById('btn1').style.backgroundColor = colnn;
   document.getElementById('btn2').style.backgroundColor = col;
-  document.getElementById('btn3').style.backgroundColor = colnn;
-  document.getElementById('btn4').style.backgroundColor = colnn;
   document.getElementById('btn2').style.color = '#FFF';
   document.getElementById('btn1').style.color = '#494748';
-  document.getElementById('btn3').style.color = '#494748';
-  document.getElementById('btn4').style.color = '#494748';
 }
 
 function cambiarcolor3(col, colnn) {
   document.getElementById('btn1').style.backgroundColor = colnn;
   document.getElementById('btn2').style.backgroundColor = colnn;
-  document.getElementById('btn3').style.backgroundColor = col;
-  document.getElementById('btn4').style.backgroundColor = colnn;
-  document.getElementById('btn3').style.color = '#FFF';
   document.getElementById('btn2').style.color = '#494748';
   document.getElementById('btn1').style.color = '#494748';
-  document.getElementById('btn4').style.color = '#494748';
 }
 
 function cambiarcolor4(col, colnn) {
   document.getElementById('btn1').style.backgroundColor = colnn;
   document.getElementById('btn2').style.backgroundColor = colnn;
-  document.getElementById('btn3').style.backgroundColor = colnn;
-  document.getElementById('btn4').style.backgroundColor = col;
-  document.getElementById('btn4').style.color = '#FFF';
   document.getElementById('btn2').style.color = '#494748';
-  document.getElementById('btn3').style.color = '#494748';
   document.getElementById('btn1').style.color = '#494748';
 }
 
