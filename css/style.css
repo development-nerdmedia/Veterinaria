@@ -176,6 +176,8 @@ main {
   border-top: 2px solid #0c7633;
   border-bottom: 2px solid #0c7633;
   overflow: hidden; }
+  .slider .slider-contacto {
+    transform: translateY(50px); }
   .slider .scroll {
     width: 100%;
     display: flex;
@@ -710,12 +712,15 @@ main {
   .contacto .none-close {
     display: none; }
   .contacto .btn-close {
-    float: right;
-    transform: translateY(-50px); }
+    display: flex;
+    justify-content: flex-end; }
+    .contacto .btn-close a {
+      z-index: 5; }
   .contacto .cont {
     padding-top: 30px;
     display: flex;
-    justify-content: space-between; }
+    justify-content: space-between;
+    transform: translateY(-50px); }
     .contacto .cont .contacto-part1 {
       width: 50%;
       color: white;
@@ -1023,7 +1028,8 @@ main {
 
 .thanks1 {
   display: flex;
-  align-items: center; }
+  align-items: center;
+  width: auto !important; }
   .thanks1 h1 {
     font-size: 60px;
     line-height: 60px;
@@ -1107,6 +1113,15 @@ main {
 @media (max-width: 1105px) {
   .Servicios .tarjeta-wrap {
     width: 46%; } }
+
+@media (max-width: 718px) and (min-width: 580px) {
+  .contacto .cont .contacto-part1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center; }
+  .contacto .cont .contacto-part1 h1 {
+    line-height: 60px; } }
 
 @media (max-width: 1024px) {
   .container {

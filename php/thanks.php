@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
   <head>
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WKTVXQN');</script>
+<!-- End Google Tag Manager -->
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -30,6 +37,11 @@ mail($to, $email_subject, $email_body, $headers);
     <main>
       <section class="contacto open">
         <div class="containerThanks">
+          <div class="btn-close btn-close-thanks">
+            <a href="index.html" class="close"
+              ><img src="icons/cruz.svg" alt=""
+            /></a>
+          </div>
           <div class="cont contThank">
             <div class="contacto-part1 thanks1">
               <div class="mid">
@@ -38,17 +50,7 @@ mail($to, $email_subject, $email_body, $headers);
                 <a href="../index.html">IR AL HOME</a>
               </div>
             </div>
-            <div class="btn-close none-close close-thank">
-              <a href="../index.html" class="close"
-                ><img src="../icons/cruz.svg" alt=""
-              /></a>
-            </div>
             <div class="contacto-part2">
-              <div class="btn-close">
-                <a href="../index.html" class="close"
-                  ><img src="../icons/cruz.svg" alt=""
-                /></a>
-              </div>
               <div class="contacto-imgs">
                 <img class="img1 hvr-float" src="../img/nosotros1.png" alt="" />
                 <img class="img2 hvr-float" src="../img/nosotros2.png" alt="" />
@@ -58,7 +60,7 @@ mail($to, $email_subject, $email_body, $headers);
           </div>
         </div>
         <div class="slider">
-          <div class="scroll text1">
+          <div class="scroll text1 slider-contacto">
             <div class="text">
               <div class="cont">
                 <img src="../icons/icono-map.svg" alt="" /><span
