@@ -16,6 +16,18 @@ body {
 main {
   padding-top: 94px; }
 
+.secmenumovil {
+  display: none; }
+
+.btnContacto {
+  cursor: pointer; }
+
+.btn-whatsapp {
+  position: fixed;
+  bottom: 60px;
+  right: 50px;
+  z-index: 11; }
+
 .mac .contacto .cont .contacto-part2 .contacto-imgs .img3 {
   width: 200px;
   position: absolute;
@@ -81,6 +93,10 @@ main {
     .navigation ul li a.icon-redsocial-inst {
       margin-right: 0;
       margin-left: 0; }
+      .navigation ul li a.icon-redsocial-rappi{
+        margin-right: 0;
+        display: flex;
+      }
     .navigation ul li a.icon-redsocial-inst,
     .navigation ul li a.icon-redsocial {
       height: 29px; }
@@ -101,12 +117,15 @@ main {
       .home .cont .home-part-1 .text {
         transform: translateY(-50px); }
       .home .cont .home-part-1 h1 {
-        font-size: 60px;
-        /*60px 3.12vw*/
-        line-height: 60px;
+        font-size: 50px;
+        /*60px*/
+        line-height: 50px;
         color: #0c7633;
         margin-bottom: 20px;
         font-weight: 900; }
+        .home .cont .home-part-1 h1 span {
+          font-weight: 500;
+          font-size: 40px; }
       .home .cont .home-part-1 h1#title2 {
         display: none; }
       .home .cont .home-part-1 h1#title3 {
@@ -115,8 +134,8 @@ main {
         display: none; }
       .home .cont .home-part-1 p {
         color: #494748;
-        font-size: 22px;
-        /*22 1.144vw*/
+        font-size: 20px;
+        /*22px 1.144vw*/
         width: 85%;
         margin-bottom: 30px; }
       .home .cont .home-part-1 a {
@@ -136,7 +155,7 @@ main {
     .home .cont .home-part-2 {
       width: 54%; }
       .home .cont .home-part-2 #cuadro {
-        background-image: url(../img/home1.png);
+        background-image: url(../img/slider-1.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center center;
@@ -167,6 +186,35 @@ main {
         .home .cont .home-part-2 .btn-home a:hover {
           background-color: #0c7633 !important;
           color: white !important; }
+
+.marquee-with-options {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: white;
+  border-top: 2px solid #0c7633;
+  border-bottom: 2px solid #0c7633;
+  overflow: hidden;
+  padding: 15px 0; }
+  .marquee-with-options .text {
+    display: flex;
+    align-items: center; }
+    .marquee-with-options .text .scroll {
+      padding: 0 20px;
+      display: flex;
+      align-items: center; }
+      .marquee-with-options .text .scroll span {
+        font-size: 25px;
+        color: #494748;
+        font-weight: 800; }
+      .marquee-with-options .text .scroll img {
+        width: 60px;
+        /*50*/
+        padding-right: 30px;
+        /*20*/ }
+
+.slider-footer {
+  position: inherit; }
 
 .slider {
   position: absolute;
@@ -221,42 +269,29 @@ main {
     transform: translateX(-200%); } }
 
 .nosotros {
-  padding: 150px 0 50px 0; }
+  padding: 130px 0;
+  padding-bottom: 50px; }
   .nosotros .cont {
-    display: flex; }
+    display: flex;
+    align-items: center; }
     .nosotros .cont .nosotros-part-1 {
       width: 50%;
-      display: flex;
-      align-items: center; }
-      .nosotros .cont .nosotros-part-1 .cont-imgs {
-        padding-right: 50px;
-        height: 550px;
-        position: relative; }
-        .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
-          width: 324px;
-          float: right; }
-        .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
-          position: absolute;
-          left: 10px;
-          top: 220px; }
-        .nosotros .cont .nosotros-part-1 .cont-imgs img.img3 {
-          float: right;
-          padding-top: 20px; }
+      padding-right: 50px; }
+      .nosotros .cont .nosotros-part-1 img {
+        width: 100%;
+        height: auto; }
     .nosotros .cont .nosotros-part-2 {
-      width: 50%;
-      display: flex;
-      flex-direction: column;
-      justify-content: center; }
+      width: 50%; }
       .nosotros .cont .nosotros-part-2 h2 {
-        font-size: 60px;
+        font-size: 45px;
         font-weight: 900;
         color: #0c7633;
         padding-left: 20px; }
       .nosotros .cont .nosotros-part-2 p {
-        font-size: 22px;
+        font-size: 20px;
         color: #494748;
         padding-left: 20px;
-        line-height: 30px;
+        line-height: 27px;
         text-align: justify; }
 
 .equipo {
@@ -309,8 +344,8 @@ main {
       .equipo #slider .slider-equipo .card-equipo .tarj-text .bot {
         padding: 10px 20px; }
         .equipo #slider .slider-equipo .card-equipo .tarj-text .bot p {
-          font-size: 22px;
-          line-height: 25px;
+          font-size: 20px;
+          line-height: 30px;
           text-align: justify; }
   .equipo #slider .slick-dotted.slick-slider {
     margin-bottom: 0px !important; }
@@ -378,7 +413,7 @@ main {
     float: right; }
   .administracion .cont {
     margin-top: 50px;
-    height: 400px; }
+    height: auto; }
     .administracion .cont .responsive {
       position: relative; }
       .administracion .cont .responsive .card {
@@ -388,7 +423,8 @@ main {
         .administracion .cont .responsive .card .tarjeta-adm {
           border-radius: 20px;
           width: 92%;
-          box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4); }
+          box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
+          margin-bottom: 5px; }
           .administracion .cont .responsive .card .tarjeta-adm .adm-img img {
             width: 100%;
             border-radius: 20px 20px 0px 0px; }
@@ -400,14 +436,20 @@ main {
             background-color: #fff;
             border-radius: 0 0 20px 20px; }
             .administracion .cont .responsive .card .tarjeta-adm .adm-text h3 {
-              font-size: 30px; }
+              font-size: 25px; }
             .administracion .cont .responsive .card .tarjeta-adm .adm-text p {
-              font-size: 24px; }
+              font-size: 20px;
+              font-weight: 500; }
       .administracion .cont .responsive .slick-dots {
         display: none !important; }
-  .administracion button.slick-arrow {
+  .administracion button.slick-arrow,
+  .Servicios button.slick-arrow{
     border-radius: 50% !important; }
-  .administracion .slick-dotted.slick-slider {
+    .Servicios .slick-list{
+      padding-bottom: 10px;
+    }
+  .administracion .slick-dotted.slick-slider,
+  .Servicios .slick-dotted.slick-slider {
     height: 100% !important; }
   .administracion .slick-list.draggable {
     height: 100% !important;
@@ -415,43 +457,66 @@ main {
   .administracion div#slider-adm {
     height: 100% !important; }
   .administracion .slick-prev,
-  .administracion .slick-next {
+  .Servicios .slick-prev,
+  .administracion .slick-next,
+  .Servicios .slick-next {
     border-radius: 20px;
     position: absolute;
     width: 47px;
     height: 47px; }
   .administracion .slick-prev:before,
-  .administracion .slick-next:before {
+  .Servicios .slick-prev:before,
+  .administracion .slick-next:before,
+  .Servicios .slick-next:before{
     content: none; }
-  .administracion .slick-next {
+  .administracion .slick-next,
+  .Servicios .slick-next {
     background-image: url(../icons/flecha2.svg) !important;
     background-repeat: no-repeat !important;
     background-size: 100% !important; }
-  .administracion .slick-next:hover {
+  .administracion .slick-next:hover,
+  .Servicios .slick-next:hover {
     background-image: url(../icons/flechahover.svg) !important;
     background-size: 100% !important;
     background-repeat: no-repeat !important; }
-  .administracion .slick-prev {
+  .administracion .slick-prev,
+  .Servicios .slick-prev {
     background-image: url(../icons/flecha1.svg) !important;
     background-size: 100%;
     background-repeat: no-repeat !important;
     background-size: 100% !important; }
-  .administracion .slick-prev:hover {
+  .administracion .slick-prev:hover,
+  .Servicios .slick-prev:hover {
     background-image: url(../icons/flechahover2.svg) !important;
     background-repeat: no-repeat;
     background-size: 100%; }
   .administracion .slick-arrow,
+  .Servicios .slick-arrow,
   .administracion .slick-arrow:hover,
-  .administracion .slick-arrow:focus {
+  .Servicios .slick-arrow:hover,
+  .administracion .slick-arrow:focus,
+  .Servicios .slick-arrow:focus {
     top: -95px;
     right: 0px;
     /*20*/ }
   .administracion .slick-prev,
+  .Servicios .slick-prev,
   .administracion .slick-prev:focus,
-  .administracion .slick-prev:hover {
+  .Servicios .slick-prev:focus,
+  .administracion .slick-prev:hover,
+  .Servicios .slick-prev:hover {
     left: inherit;
     right: 63px;
     /*75*/ }
+
+    .administracion.groomer{
+      padding-top: 100px !important;
+    }
+    .Servicios .slick-arrow,
+    .Servicios .slick-arrow:hover,
+    .Servicios .slick-arrow:focus{
+      top: -53px;
+    }
 
 .Servicios {
   padding: 100px 0; }
@@ -470,16 +535,22 @@ main {
     display: flex;
     flex-wrap: wrap;
     -webkit-box-pack: center;
-    -webkit-justify-content: center;
+    -webkit-justify-content: pace-between;
     -ms-flex-pack: center;
-    justify-content: center; }
+    justify-content: space-between; 
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .Servicios .card.slick-slide{
+    padding: 0 15px;
+  }
   .Servicios .tarjeta-wrap {
-    margin: 15px;
     -webkit-perspective: 800;
     perspective: 800;
-    width: 46.8%; }
+    width: 100%; }
   .Servicios .tarjeta {
-    height: 280px;
+    height: 305px;
     background: white;
     position: relative;
     -webkit-transform-style: preserve-3d;
@@ -493,11 +564,17 @@ main {
     flex-direction: column;
     justify-content: center;
     align-items: center; }
+    .Servicios .adelante .contentImg {
+      display: flex;
+      justify-content: center; 
+      align-items: center;}
+    .Servicios .adelante img {
+      width: 80%; }
     .Servicios .adelante p {
-      margin-top: 10px;
-      font-size: 40px;
+      margin-top: 25px;
+      font-size: 30px;
       color: #494748;
-      font-weight: 800;
+      font-weight: 400;
       line-height: 35px; }
   .Servicios .adelante,
   .Servicios .atras {
@@ -519,10 +596,9 @@ main {
     justify-content: space-between;
     color: #fff; }
     .Servicios .atras p {
-      font-size: 25px;
+      font-size: 20px;
       color: #494748;
-      line-height: 30px;
-      text-align: justify;
+      line-height: 25px;
       z-index: 2; }
     .Servicios .atras .boton-tarjeta-atras {
       display: flex;
@@ -629,8 +705,26 @@ main {
 .footer .maps {
   height: 479px; }
 
+.footer .contentLibro {
+  padding: 12px 0; }
+  .footer .contentLibro .container {
+    display: flex;
+    justify-content: flex-end; }
+    .footer .contentLibro .container a {
+      text-decoration: none;
+      display: flex;
+      align-items: center;
+      color: #494748;
+      font-size: 13px;
+      font-family: "Mukta", sans-serif;
+      font-weight: 700; }
+      .footer .contentLibro .container a img {
+        margin-right: 12px; }
+
 .footer .creditos {
   height: 35px; }
+  .footer .creditos .container {
+    border-top: 0.7px solid #494748; }
   .footer .creditos .cont-credito {
     display: flex;
     justify-content: space-between;
@@ -656,59 +750,17 @@ main {
       .footer .creditos .cont-credito .info-nerd img.personaje {
         width: 48px; }
 
-.secmenumovil {
-  height: 100vh;
-  padding: 100px 0;
-  position: absolute;
-  width: 100%;
-  z-index: 10;
-  top: 0;
-  position: fixed;
-  transition: transform 0.5s ease;
-  transform: translateX(-100%);
-  background-color: #f3f9f5; }
-  .secmenumovil a.close-menu {
-    position: absolute;
-    right: 50px; }
-  .secmenumovil .btn-menumovil {
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center; }
-  .secmenumovil ul {
-    text-align: center; }
-    .secmenumovil ul li {
-      list-style: none;
-      margin: 15px 0; }
-      .secmenumovil ul li a {
-        text-decoration: none;
-        color: #0c7633;
-        font-size: 35px;
-        font-weight: 800; }
-    .secmenumovil ul li.btn-social-menu {
-      margin-top: 50px; }
-      .secmenumovil ul li.btn-social-menu a {
-        margin: 0 10px; }
-        .secmenumovil ul li.btn-social-menu a img {
-          width: 33px; }
-
-.secmenumovil.open {
-  transform: translateX(0%);
-  z-index: 10;
-  position: absolute, fixed;
-  top: 0; }
-
 .contacto {
+  display: none;
+  transform: translateX(100%);
   height: 100vh;
   background-color: #0c7633;
   padding: 70px 0;
   z-index: 10;
-  position: absolute;
   width: 100%;
   top: 0;
   position: fixed;
-  transition: transform 0.5s ease;
-  transform: translateX(100%); }
+  transition: transform 0.5s ease; }
   .contacto .none-close {
     display: none; }
   .contacto .btn-close {
@@ -728,17 +780,20 @@ main {
       /* border, padding, margin, width */
       /* address, locale */ }
       .contacto .cont .contacto-part1 h1 {
-        font-size: 60px;
-        line-height: 50px;
+        font-size: 45px;
+        line-height: 40px;
         margin-bottom: 20px; }
       .contacto .cont .contacto-part1 p {
-        font-size: 22px;
+        font-size: 20px;
         margin-bottom: 40px;
         line-height: 25px; }
       .contacto .cont .contacto-part1 input[type="number"]::-webkit-inner-spin-button,
       .contacto .cont .contacto-part1 input[type="number"]::-webkit-outer-spin-button {
         -webkit-appearance: none;
         margin: 0; }
+      .contacto .cont .contacto-part1 input:-webkit-autofill {
+        -webkit-box-shadow: 0 0 0px 1000px #4b9968 inset !important;
+        -webkit-text-fill-color: #fff; }
       .contacto .cont .contacto-part1 input[type="number"] {
         -moz-appearance: textfield; }
       .contacto .cont .contacto-part1 #fs-frm select,
@@ -886,6 +941,9 @@ main {
   z-index: 10;
   position: absolute, fixed;
   top: 0; }
+
+.contacto.open.thanks {
+  display: block; }
 
 .activo {
   /* position: absolute; */
@@ -1049,6 +1107,115 @@ main {
     background-color: #fcca08;
     box-shadow: 0px 4px 8px #d7ab00; }
 
+.libroReclamaciones {
+  margin-top: 100px;
+  margin-bottom: 75px; }
+  .libroReclamaciones h1 {
+    font-family: "Mukta", sans-serif;
+    font-size: 50px;
+    color: #0C7633;
+    line-height: 106%; }
+  .libroReclamaciones .datosEmpresa {
+    margin-top: 30px;
+    margin-bottom: 50px; }
+    .libroReclamaciones .datosEmpresa p {
+      color: #494748;
+      font-size: 20px;
+      line-height: 130.31%; }
+  .libroReclamaciones form .grupo {
+    margin-bottom: 50px; }
+  .libroReclamaciones form h2 {
+    font-weight: 700;
+    font-size: 35px;
+    color: #0C7633;
+    margin-bottom: 20px;
+    line-height: 106%; }
+  .libroReclamaciones form .form-column {
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 32px; }
+  .libroReclamaciones form .form-group {
+    width: 100%; }
+  .libroReclamaciones form select, .libroReclamaciones form input, .libroReclamaciones form textarea {
+    width: 100%;
+    background: #0c76331f;
+    border-radius: 5px;
+    color: #494748;
+    padding: 15px;
+    border: none;
+    font-weight: 400;
+    font-size: 20px;
+    margin-bottom: 22px;
+    font-family: "Mukta", sans-serif;
+    -webkit-appearance: none; }
+    .libroReclamaciones form select option, .libroReclamaciones form input option, .libroReclamaciones form textarea option {
+      color: #494748;
+      font-weight: 400; }
+    .libroReclamaciones form select::placeholder, .libroReclamaciones form input::placeholder, .libroReclamaciones form textarea::placeholder {
+      color: #494748; }
+  .libroReclamaciones form input[type=number]::-webkit-inner-spin-button,
+  .libroReclamaciones form input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none; }
+  .libroReclamaciones form input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0px 1000px #0c76331f inset !important;
+    -webkit-text-fill-color: #494748; }
+  .libroReclamaciones form .grupo .form-group:last-child input,
+  .libroReclamaciones form .grupo .form-group:last-child textarea,
+  .libroReclamaciones form .grupo .form-group:last-child select {
+    margin-bottom: 0px; }
+  .libroReclamaciones form .grupo .form-column .form-group:last-child input,
+  .libroReclamaciones form .grupo .form-column .form-group:last-child textarea,
+  .libroReclamaciones form .grupo .form-column .form-group:last-child select {
+    margin-bottom: 22px; }
+  .libroReclamaciones form input.enviar {
+    background: #FCCA08;
+    box-shadow: 0px 4px 8px #D7AB00;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #0C7633;
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+    transition: all 0.2s linear;
+    width: 135px;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 0;
+    padding: 8px 0 !important; }
+    .libroReclamaciones form input.enviar:hover {
+      background-color: #0c7633;
+      color: #fcca08;
+      box-shadow: 0px 4px 8px #0c7633;
+      transition: 0.2s all; }
+  .libroReclamaciones form .form-select {
+    position: relative; }
+    .libroReclamaciones form .form-select select {
+      -webkit-appearance: none;
+      appearance: none; }
+    .libroReclamaciones form .form-select::before {
+      content: '';
+      position: absolute;
+      background-image: url(../icons/flecha-select.svg);
+      background-size: 100%;
+      background-repeat: no-repeat;
+      top: 25px;
+      right: 15px;
+      width: 20px;
+      height: 16px;
+      pointer-events: none; }
+  .libroReclamaciones form .form-select.active::before {
+    transform: translateY(-50%) rotate(180deg); }
+  .libroReclamaciones form textarea {
+    height: 200px; }
+  .libroReclamaciones form .form-column.cuarto .form-group {
+    width: 65%; }
+  .libroReclamaciones form .form-column.cuarto .form-group.form-select {
+    width: 35%; }
+  .libroReclamaciones form .form-column.tercer .form-group:first-of-type {
+    width: 35%; }
+  .libroReclamaciones form .form-column.tercer .form-group:last-child {
+    width: 65%; }
+
 @media (max-width: 1880px) {
   .contacto {
     padding: 50px 0; } }
@@ -1065,7 +1232,49 @@ main {
   .contacto .cont .contacto-part2 .contacto-imgs .img3 {
     bottom: 50px; }
   .mac .contacto .cont .contacto-part2 .contacto-imgs .img3 {
-    bottom: -220px; } }
+    bottom: -220px; }
+  .libroReclamaciones {
+    margin-top: 100px; } }
+
+@media (max-width: 1366px) {
+  .nosotros .cont .nosotros-part-1 {
+    padding-right: 30px; } }
+
+@media (max-width: 1366px) and (min-height: 930px) {
+  .home {
+    height: 790px;
+    /*700*/ }
+  .home .cont .home-part-2 #cuadro {
+    transform: translateY(-54px);
+    /*20*/ }
+  /**/
+  .tarjeta-wrap:hover .tarjeta {
+    -webkit-transform: rotateY(0);
+    transform: rotateY(0); }
+  .tarjeta .adelante .contentImg {
+    display: flex; }
+  .tarjeta .adelante .contentImg img {
+    width: 41px; }
+  .tarjeta .adelante .tittle1 {
+    display: none; }
+  .tarjeta .adelante .newText {
+    font-size: 16px;
+    line-height: 19px; }
+  .tarjeta .adelante .contentImg .tittle2 {
+    display: block;
+    padding-left: 15px; }
+  .tarjeta .adelante .newText {
+    display: block; }
+  .Servicios .tarjeta {
+    height: 175px; }
+  .Servicios .adelante {
+    align-items: flex-start;
+    padding: 24px; }
+  .Servicios .adelante p {
+    margin-top: 12px; }
+  .tarjeta .adelante .newText b {
+    font-weight: 900;
+    font-size: 16px; } }
 
 @media (max-width: 1290px) and (min-width: 1025px) {
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
@@ -1112,7 +1321,11 @@ main {
 
 @media (max-width: 1105px) {
   .Servicios .tarjeta-wrap {
-    width: 46%; } }
+    width: 100%; } 
+    .Servicios .wrap{
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
 
 @media (max-width: 718px) and (min-width: 580px) {
   .contacto .cont .contacto-part1 {
@@ -1124,6 +1337,9 @@ main {
     line-height: 60px; } }
 
 @media (max-width: 1024px) {
+  .Servicios .slick-arrow, .Servicios .slick-arrow:hover {
+    top: -37px;
+  }
   .container {
     width: 90%; }
   /*HOME*/
@@ -1139,7 +1355,7 @@ main {
     padding-right: 0; }
   /*seccion nosotros*/
   .nosotros {
-    padding: 80px 0; }
+    padding: 50px 0; }
   .nosotros .cont .nosotros-part-1 .cont-imgs {
     padding-right: 50px;
     height: auto; }
@@ -1198,7 +1414,7 @@ main {
   .Servicios .title h2 {
     font-size: 45px; }
   .Servicios .tarjeta-wrap {
-    width: 46%; }
+    width: 100%; }
   .Servicios .adelante p {
     font-size: 30px; }
   .Servicios .adelante img {
@@ -1237,9 +1453,64 @@ main {
     width: 1px;
     transform: translate(60px, -120px); }
   .contacto .close-thank {
-    transform: translate(60px, -204px); } }
+    transform: translate(60px, -204px); }
+  .libroReclamaciones form .form-column {
+    grid-gap: 20px; }
+    .administracion.groomer {
+      padding-top: 80px !important;
+  }
+  /*end 1024*/ 
+}
 
 @media (max-width: 862px) {
+  .secmenumovil {
+    display: block;
+    height: 100vh;
+    padding: 100px 0;
+    position: absolute;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+    position: fixed;
+    transition: transform 0.5s ease;
+    transform: translateX(-100%);
+    background-color: #f3f9f5; }
+    .secmenumovil a.close-menu {
+      position: absolute;
+      right: 50px; }
+    .secmenumovil .btn-menumovil {
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+    .secmenumovil ul {
+      text-align: center; }
+      .secmenumovil ul li {
+        list-style: none;
+        margin: 15px 0; }
+        .secmenumovil ul li a {
+          text-decoration: none;
+          color: #0c7633;
+          font-size: 35px;
+          font-weight: 800; }
+      .secmenumovil ul li.btn-social-menu {
+        margin-top: 50px; }
+        .secmenumovil ul li.btn-social-menu a {
+          margin: 0 10px; }
+          .secmenumovil ul li.btn-social-menu a img {
+            width: 33px; }
+  .secmenumovil.open {
+    transform: translateX(0%);
+    z-index: 10;
+    position: absolute, fixed;
+    top: 0; }
+  .nosotros .cont .nosotros-part-1 {
+    margin-top: 50px;
+    padding-right: 0px;
+    display: flex;
+    justify-content: center; }
+    .nosotros .cont .nosotros-part-1 img {
+      max-width: 447px; }
   ul.menunormal {
     display: none; }
   ul.menumovil {
@@ -1272,8 +1543,7 @@ main {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding-right: 0px;
-    height: 450px; }
+    padding-right: 0px; }
   .nosotros .cont .nosotros-part-1 {
     justify-content: center; }
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
@@ -1300,7 +1570,7 @@ main {
   .administracion {
     padding-bottom: 0; }
   .Servicios .tarjeta-wrap {
-    width: 45%; }
+    width: 100%; }
   .Servicios .atras p {
     font-size: 18px; }
   .footer .bg-footer .container .contfoot h3 {
@@ -1309,7 +1579,19 @@ main {
   .footer .maps {
     height: 300px; } }
 
+@media (max-width: 796px) {
+  .libroReclamaciones form .form-column {
+    flex-direction: column;
+    grid-gap: 0px; }
+  .libroReclamaciones form .form-column.cuarto .form-group.form-select,
+  .libroReclamaciones form .form-column.cuarto .form-group,
+  .libroReclamaciones form .form-column.tercer .form-group:first-of-type,
+  .libroReclamaciones form .form-column.tercer .form-group:last-child {
+    width: 100%; } }
+
 @media (max-width: 768px) {
+  .btn-whatsapp img {
+    width: 50px; }
   .Servicios .atras a {
     padding: 5px 35px; }
   .home .cont {
@@ -1391,7 +1673,7 @@ main {
   .administracion .slick-arrow:focus {
     top: -77px; }
   .Servicios .tarjeta-wrap {
-    width: 45%; }
+    width: 100%; }
   .Servicios .atras p {
     font-size: 18px; }
   .footer .bg-footer .container .contfoot {
@@ -1410,13 +1692,24 @@ main {
     align-items: center; }
   .footer .bg-footer .container .contfoot h3 {
     font-size: 30px;
-    line-height: 35px; } }
+    line-height: 35px; }
+  .libroReclamaciones h1 {
+    font-size: 40px; }
+  .libroReclamaciones form h2 {
+    font-size: 28px; }
+  .libroReclamaciones .datosEmpresa {
+    margin-top: 30px;
+    margin-bottom: 30px; } }
 
 @media (max-width: 668px) {
   .Servicios .tarjeta-wrap {
     width: 100%; }
   .Servicios .atras {
-    justify-content: space-around; } }
+    justify-content: space-around; } 
+    .Servicios .wrap {
+      grid-template-columns: repeat(1, 1fr);
+  }
+  }
 
 @media (max-width: 650px) {
   .administracion .title h2 {
@@ -1425,11 +1718,23 @@ main {
   .administracion .slick-arrow,
   .administracion .slick-arrow:hover,
   .administracion .slick-arrow:focus {
-    top: -98px; } }
+    top: -98px; } 
+    .administracion.groomer .slick-arrow, .administracion.groomer .slick-arrow:hover, .administracion.groomer .slick-arrow:focus {
+      top: -81px;
+    }
+  }
 
 @media (max-width: 580px) {
   .Servicios .tarjeta-wrap {
     width: 100%; }
+  .header a.logo {
+    height: auto;
+    display: flex; }
+    .header a.logo img {
+      width: 157px; }
+  .btn-whatsapp {
+    right: 28px;
+    bottom: 14px; }
   .Servicios .atras {
     justify-content: space-around; }
   .contacto .cont .contacto-part1 {
@@ -1449,18 +1754,33 @@ main {
 @media (max-width: 580px) and (max-width: 570px) {
   .footer .creditos {
     height: auto; }
-  .footer .creditos {
+  .footer .creditos .container {
     padding: 10px 0; }
   .footer .creditos .cont-credito {
     flex-direction: column; }
   .footer .creditos .cont-credito .info-nerd {
-    padding-top: 5px; } }
+    padding-top: 5px; }
+  .footer .contentLibro .container {
+    justify-content: center; } }
+
+@media (max-width: 580px) and (max-width: 500px) {
+  .libroReclamaciones form .form-select::before {
+    width: 15px;
+    top: 38%; }
+  .libroReclamaciones h1 {
+    font-size: 38px; }
+  .libroReclamaciones form select, .libroReclamaciones form input, .libroReclamaciones form textarea {
+    font-size: 18px; }
+  .libroReclamaciones form select, .libroReclamaciones form input, .libroReclamaciones form textarea {
+    padding: 10px 15px; }
+  .libroReclamaciones form .grupo {
+    margin-bottom: 30px; }
+  .libroReclamaciones form h2 {
+    font-size: 25px; }
+  .libroReclamaciones form .form-select::before {
+    top: 19px; } }
 
 @media (max-width: 580px) and (max-width: 425px) {
-  .footer .creditos .cont-credito h3 {
-    font-size: 10px; }
-  .footer .creditos .cont-credito .info-nerd {
-    transform: scale(0.8); }
   .footer .creditos .cont-credito .info-nerd {
     padding-top: 5px; } }
 
@@ -1469,7 +1789,7 @@ main {
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img2 {
     left: -62px; }
   .administracion .title h2 {
-    font-size: 32px;
+    font-size: 30px;
     line-height: 40px; }
   .administracion .slick-arrow,
   .administracion .slick-arrow:hover,
@@ -1483,7 +1803,11 @@ main {
     font-size: 18px; }
   .contacto .cont .contacto-part1 p {
     font-size: 18px;
-    margin-bottom: 30px; } }
+    margin-bottom: 30px; } 
+    .administracion.groomer .slick-arrow, .administracion.groomer .slick-arrow:hover, .administracion.groomer .slick-arrow:focus {
+      top: -69px;
+    }
+  }
 
 @media (max-width: 454px) and (max-width: 770px) {
   .contacto {
@@ -1536,6 +1860,8 @@ main {
     transform: rotateY(180deg); } }
 
 @media (max-width: 768px) {
+  .libroReclamaciones {
+    margin-top: 50px; }
   .tarjeta .adelante .contentImg {
     display: flex; }
   .tarjeta .adelante .contentImg img {
@@ -1568,41 +1894,25 @@ main {
     transform: translateY(-20px); }
   /**/ }
 
-@media (max-width: 1366px) and (min-height: 930px) {
-  .home {
-    height: 790px;
-    /*700*/ }
-  .home .cont .home-part-2 #cuadro {
-    transform: translateY(-54px);
-    /*20*/ }
-  /**/
-  .tarjeta-wrap:hover .tarjeta {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0); }
-  .tarjeta .adelante .contentImg {
-    display: flex; }
-  .tarjeta .adelante .contentImg img {
-    width: 41px; }
-  .tarjeta .adelante .tittle1 {
-    display: none; }
-  .tarjeta .adelante .newText {
-    font-size: 16px;
-    line-height: 19px; }
-  .tarjeta .adelante .contentImg .tittle2 {
-    display: block;
-    padding-left: 15px; }
-  .tarjeta .adelante .newText {
-    display: block; }
-  .Servicios .tarjeta {
-    height: 170px; }
-  .Servicios .adelante {
-    align-items: flex-start;
-    padding: 24px; }
-  .Servicios .adelante p {
-    margin-top: 12px; }
-  .tarjeta .adelante .newText b {
-    font-weight: 900;
-    font-size: 16px; } }
+@media (max-width: 1024px) {
+  .libroReclamaciones {
+    margin-top: 80px; } }
+
+@media (max-width: 768px) {
+  .libroReclamaciones {
+    margin-top: 50px; } 
+    .Servicios .tarjeta {
+      height: 100%;
+
+    }
+    .Servicios .adelante{
+      position: relative;
+      justify-content: flex-start;
+    }
+    .Servicios .adelante p {
+      font-size: 25px;
+  }
+  }
 
 @media (min-width: 769px) and (max-height: 849px) {
   .home .cont .home-part-2 #cuadro {
@@ -1648,6 +1958,16 @@ main {
   .home .cont .home-part-2 #cuadro:before {
     top: -1px; } }
 
+
+@media (max-width: 400px) {
+  .navigation ul.menumovil li{
+    display: none;
+  }
+  .navigation ul.menumovil li:last-child{
+    display: block;
+  }
+}
+  
 .down_arrow {
   top: 0;
   position: relative;

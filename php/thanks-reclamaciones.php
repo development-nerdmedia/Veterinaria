@@ -13,15 +13,24 @@
   <body>
   <?php 
 $myemails = 'diego@nerdmedia.pe, alonso@nerdmedia.pe, alexis.ndpm@gmail.com, clivetsanmarcos@gmail.com';
+$tipoDoc = $_POST['doc'];
+$numDoc = $_POST['numeroDoc'];
 $name = $_POST['name'];
-$tel = $_POST['telephone'];
+$direccion = $_POST['direccion'];
+$distrito = $_POST['distrito'];
+$tel = $_POST['telefono'];
 $email = $_POST['email'];
-$message = $_POST['message'];
+$bienContratado = $_POST['bienContratado'];
+$montoReclamado = $_POST['montoReclamado'];
+$descripcion = $_POST['descripcion'];
+$tipoSolicitud = $_POST['tipoSolicitud'];
+$detalle = $_POST['detalle'];
+$pedido = $_POST['pedido'];
 
 $to = $myemails;
-$email_subject = "Contacto Veterinaria San Marcos";
-$email_body = "Haz recibido un nuevo mensaje. \n Nombre: $name \n 
-Telefono: $tel \n Email: $email \n Mensaje: \n $message";
+$email_subject = "Libro de Reclamaciones - Veterinaria San Marcos";
+$email_body = "
+Haz recibido un nuevo mensaje. \n Nombre: $name \n Tipo de Documento: $tipoDoc \n Numero de Documento: $numDoc \n Dirección: $direccion \n Distrito: $distrito \n Teléfono: $tel \n Email: $email \n Identificación del bien contratado: $bienContratado \n Monto Reclamado: $montoReclamado \n Descripción: $descripcion \n Tipo de Solicitud: $tipoSolicitud \n Detalle: $detalle \n Pedido: $pedido \n" ;
 $headers = "From: $email";
 
 mail($to, $email_subject, $email_body, $headers);
@@ -38,7 +47,7 @@ mail($to, $email_subject, $email_body, $headers);
             <div class="contacto-part1 thanks1">
               <div class="mid">
                 <h1>Gracias por escribirnos</h1>
-                <p>Nos comunicaremos en breve</p>
+                <p>Su reclamo se envió correctamente</p>
                 <a href="https://veterinariasanmarcos.com/">IR AL HOME</a>
               </div>
             </div>
