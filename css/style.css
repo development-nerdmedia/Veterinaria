@@ -297,6 +297,25 @@ main {
 .equipo {
   padding: 100px 0;
   /*probando poner arriba*/ }
+  .equipo .title,
+  .administracion .title,
+  .Servicios .title{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+  .equipo .title .swiper-button-prev,
+  .administracion .title .swiper-button-prev,
+  .Servicios .title .swiper-button-prev{
+    right: 63px;
+    left: initial;
+  }
+  .equipo .title .swiper-button-next,
+  .administracion .title .swiper-button-next,
+  .Servicios .title .swiper-button-next{
+    right: 0;
+  }
   .equipo .title h2 {
     font-size: 60px;
     color: #0c7633;
@@ -357,6 +376,7 @@ main {
     position: absolute;
     width: 47px;
     height: 47px; }
+
   .equipo .slick-prev:hover,
   .equipo .slick-prev:focus,
   .equipo .slick-next:hover {
@@ -398,6 +418,33 @@ main {
     left: inherit;
     right: 63px;
     /*75*/ }
+    .swiper-button-next:after,
+    .swiper-button-prev:after{
+      content: none;
+    }
+    .swiper-button-next{
+      width: 47px;
+      height: 47px;
+      background-image: url(../icons/flecha2.svg) !important;
+      background-repeat: no-repeat !important;
+      background-size: 100% !important;
+    }
+    .swiper-button-next:hover {
+      background-image: url(../icons/flechahover.svg) !important;
+      background-repeat: no-repeat !important;
+      background-size: 100%; }
+
+      .swiper-button-prev{
+        width: 47px;
+        height: 47px;
+        background-image: url(../icons/flecha1.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100% !important;
+      }
+      .swiper-button-prev:hover {
+        background-image: url(../icons/flechahover2.svg) !important;
+        background-repeat: no-repeat !important;
+        background-size: 100%; }
 
 .equipo .slider-equipo .slick-dots {
   display: none !important; }
@@ -425,6 +472,9 @@ main {
           width: 92%;
           box-shadow: 0px 4px 4px rgba(73, 71, 72, 0.4);
           margin-bottom: 5px; }
+          .administracion .cont .responsive .card .tarjeta-adm .adm-img{
+            display: flex;
+          }
           .administracion .cont .responsive .card .tarjeta-adm .adm-img img {
             width: 100%;
             border-radius: 20px 20px 0px 0px; }
@@ -445,8 +495,15 @@ main {
   .administracion button.slick-arrow,
   .Servicios button.slick-arrow{
     border-radius: 50% !important; }
-    .Servicios .slick-list{
+    .Servicios .swiper-slide{
+      padding: 0 15px;
       padding-bottom: 10px;
+    }
+    .administracion .cont .responsive .card{
+      align-items: flex-start;
+    }
+    .swiper-button-next, .swiper-button-prev{
+      z-index: 1;
     }
   .administracion .slick-dotted.slick-slider,
   .Servicios .slick-dotted.slick-slider {
@@ -544,6 +601,9 @@ main {
   }
   .Servicios .card.slick-slide{
     padding: 0 15px;
+  }
+  .Servicios .slick-list .card{
+    padding-bottom: 10px;
   }
   .Servicios .tarjeta-wrap {
     -webkit-perspective: 800;
@@ -1665,8 +1725,7 @@ main {
   .administracion .cont {
     margin-top: 50px;
     height: auto; }
-  .administracion .slick-list.draggable {
-    padding-bottom: 10px; }
+  
   .administracion .slick-arrow,
   .administracion .slick-arrow:hover,
   .administracion .slick-arrow:focus {

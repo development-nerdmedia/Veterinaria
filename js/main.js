@@ -99,64 +99,149 @@ function cambiarcolor4(col, colnn) {
 }
 
 $(document).ready(function () {
-  $('.responsive').slick({
-    dots: true,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 3,
-    slidesToScroll: 1,
-    adaptiveHeight: true,
-    infinite: true,
-    // autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: 1025,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          infinite: true,
-          dots: true
-        }
+  // $('.responsive').slick({    
+  //   dots: true,
+  //   infinite: true,
+  //   speed: 500,
+  //   slidesToShow: 3,
+  //   slidesToScroll: 1,
+  //   adaptiveHeight: true,
+  //   infinite: true,
+  //   // autoplay: true,
+  //   autoplaySpeed: 5000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1025,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 2,
+  //         infinite: true,
+  //         dots: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 581,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1
+  //       }
+  //     }
+  //   ]
+  // });
+  // $('.slider-equipo').slick({
+  //   dots: true,
+  //   speed: 500,
+  //   slidesToShow: 2,
+  //   slidesToScroll: 2,
+  //   infinite: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 5000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 581,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1,
+  //         infinite: true,
+  //         dots: true
+  //       }
+  //     }
+  //   ]
+  // });
+  // $('.slider-servicio').slick({
+  //   dots: false,
+  //   infinite: true,
+  //   slidesToShow: 1,
+  //   slidesToScroll: 1,
+  //   infinite: true,
+  //   autoplay: true,
+  //   autoplaySpeed: 4000,
+  // });
+
+  var swiper = new Swiper("section.equipo .slider-equipo", {
+    slidesPerView: 2,
+    loop: true,
+    spaceBetween: 0,
+    navigation: {
+      nextEl: ".equipo .swiper-button-next",
+      prevEl: ".equipo .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      '581': {
+        slidesPerView: 2,
       },
-      {
-        breakpoint: 581,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-    ]
+      '0': {
+        slidesPerView: 1,
+      },
+    },
   });
-  $('.slider-equipo').slick({
-    dots: true,
-    speed: 500,
-    slidesToShow: 2,
-    slidesToScroll: 2,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
-    responsive: [
-      {
-        breakpoint: 581,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      }
-    ]
+
+  var swiper2 = new Swiper("section.administracion.team .sliderAdmin", {
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    navigation: {
+      nextEl: ".administracion.team .swiper-button-next",
+      prevEl: ".administracion.team .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      '1025': {
+        slidesPerView: 3,
+      },
+      '581': {
+        slidesPerView: 2,
+      },
+      '0': {
+        slidesPerView: 1,
+      },
+    },
   });
-  $('.slider-servicio').slick({
-    dots: false,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    infinite: true,
-    autoplay: true,
-    autoplaySpeed: 5000,
+
+  var swiper3 = new Swiper("section.administracion.groomer .sliderAdmin", {
+    slidesPerView: 3,
+    loop: true,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    navigation: {
+      nextEl: ".administracion.groomer .swiper-button-next",
+      prevEl: ".administracion.groomer .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    breakpoints: {
+      '1025': {
+        slidesPerView: 3,
+      },
+      '581': {
+        slidesPerView: 2,
+      },
+      '0': {
+        slidesPerView: 1,
+      },
+    },
   });
+  var swiper4 = new Swiper("section.Servicios .sliderAdmin", {
+    slidesPerView: 1,
+    loop: true,
+    spaceBetween: 0,
+    slidesPerGroup: 1,
+    navigation: {
+      nextEl: "section.Servicios .swiper-button-next",
+      prevEl: "section.Servicios .swiper-button-prev",
+    },
+    autoplay: {
+      delay: 3000,
+    },
+  });
+
 });
 
 
