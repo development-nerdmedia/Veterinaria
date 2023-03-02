@@ -10,7 +10,7 @@ if (navigator.userAgent.indexOf('Mac OS X') != -1) {
 /* close nav when clicking on a nav item */
 document.addEventListener("click", function (e) {
   if (e.target.closest(".close")) {
-    jQuery('body').removeClass('scrollhidden');    
+    jQuery('body').removeClass('scrollhidden');
     document.querySelector(".contacto").classList.toggle("open");
   }
 });
@@ -26,10 +26,10 @@ function toggleNav() {
 
 document.addEventListener("click", (e) => {
   if (e.target.closest(".btnContacto")) {
-        document.querySelector(".contacto").classList.toggle("open");
-        jQuery('body').addClass('scrollhidden'); 
-    }
-  
+    document.querySelector(".contacto").classList.toggle("open");
+    jQuery('body').addClass('scrollhidden');
+  }
+
 })
 
 
@@ -162,7 +162,7 @@ $(document).ready(function () {
 
 MyApp = {
   selectFocus: {
-    init: function(){
+    init: function () {
       document.addEventListener("click", (e) => {
         var formespacioselect = document.querySelectorAll('.libroReclamaciones form select');
         if (e.target.closest(".libroReclamaciones form select")) {
@@ -173,36 +173,36 @@ MyApp = {
             shinyItem2.parentElement.classList.remove("active")
           });
         }
-      })  
+      })
     }
   },
-  contactoPage:{
-    init: function(){
-      setTimeout(function() {
+  contactoPage: {
+    init: function () {
+      setTimeout(function () {
         var mi_elemento = document.getElementById("contactoPage");
         mi_elemento.style.display = "block";
       }, 1000);
     }
   },
-  header:{
-    init: function(){
+  header: {
+    init: function () {
       /* close nav when clicking on a nav item */
       document.addEventListener("click", function (e) {
         if (e.target.closest(".close-menu-movil")) {
-      menumovilact();
-    }
-});
+          menumovilact();
+        }
+      });
       /* MENU MOVIL */
       var menumovil = document.querySelector(".icon-menu");
-      menumovil.addEventListener("click", menumovilact);      
+      menumovil.addEventListener("click", menumovilact);
       function menumovilact() {
         menumovil.classList.toggle("activo");
         document.querySelector(".secmenumovil").classList.toggle("open");
       }
     }
   },
-  marquee:{
-    init: function (){
+  marquee: {
+    init: function () {
       $('.marquee-with-options').marquee({
         speed: 30000,
         gap: 50,
