@@ -170,7 +170,7 @@ $(document).ready(function () {
       delay: 3000,
     },
     breakpoints: {
-      '581': {
+      '769': {
         slidesPerView: 2,
       },
       '0': {
@@ -195,7 +195,7 @@ $(document).ready(function () {
       '1025': {
         slidesPerView: 3,
       },
-      '581': {
+      '625': {
         slidesPerView: 2,
       },
       '0': {
@@ -220,7 +220,7 @@ $(document).ready(function () {
       '1025': {
         slidesPerView: 3,
       },
-      '581': {
+      '687': {
         slidesPerView: 2,
       },
       '0': {

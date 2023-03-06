@@ -1025,6 +1025,10 @@ main {
 #btn-left {
   cursor: pointer; }
 
+  .equipo .title h2, .administracion .title h2, .Servicios .title h2{
+    width: 80%;
+  }
+
 /* Efectos hover */
 /* Underline From Left */
 .hvr-underline-from-left {
@@ -1297,7 +1301,9 @@ main {
 
 @media (max-width: 1366px) {
   .nosotros .cont .nosotros-part-1 {
-    padding-right: 30px; } }
+    padding-right: 30px; } 
+
+  }
 
 @media (max-width: 1366px) and (min-height: 930px) {
   .home {
@@ -1308,8 +1314,8 @@ main {
     /*20*/ }
   /**/
   .tarjeta-wrap:hover .tarjeta {
-    -webkit-transform: rotateY(0);
-    transform: rotateY(0); }
+    -webkit-transform: rotateY(0) !important;
+    transform: rotateY(0) !important; }
   .tarjeta .adelante .contentImg {
     display: flex; }
   .tarjeta .adelante .contentImg img {
@@ -1333,7 +1339,22 @@ main {
     margin-top: 12px; }
   .tarjeta .adelante .newText b {
     font-weight: 900;
-    font-size: 16px; } }
+    font-size: 16px; } 
+
+    .Servicios .adelante {
+      width: 100%;
+      position: relative;    
+      justify-content: flex-start;  
+    }
+    .tarjeta .adelante .contentImg .tittle2 {
+      font-size: 25px;
+    }
+    .Servicios .tarjeta{
+      height: 100%;
+      min-height: 180px;
+    }
+  
+  }
 
 @media (max-width: 1290px) and (min-width: 1025px) {
   .nosotros .cont .nosotros-part-1 .cont-imgs img.img1 {
@@ -1804,10 +1825,12 @@ main {
     font-size: 45px; }
   .contacto .cont .contacto-part1 p {
     font-size: 22px; }
-  .equipo .title h2 {
+  .equipo .title h2,
+  .administracion .title h2,
+    .Servicios .title h2 {
     font-size: 40px;
-    width: 250px;
-    line-height: 45px; } }
+    width: 70%;
+    line-height: 45px; }}
 
 @media (max-width: 580px) and (max-width: 570px) {
   .footer .creditos {
@@ -2035,3 +2058,20 @@ main {
 
 .down_arrow:hover {
   top: -10px; }
+
+
+@media (max-width: 440px) {
+  .equipo .title h2, .administracion .title h2, .Servicios .title h2{
+    font-size: 35px;
+    line-height: 35px;
+  }
+}
+
+@media (max-width: 425px) {
+  .equipo .title h2, .administracion .title h2, .Servicios .title h2{
+    width: 65%;
+    font-size: 30px;
+    line-height: 30px;
+  }
+}
+
